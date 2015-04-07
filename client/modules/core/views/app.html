@@ -1,0 +1,34 @@
+<h1>News list</h1>
+<hr>
+<form name="todoForm" novalidate ng-submit="addNotice()">
+  <div class="form-group"
+       ng-class="{'has-error': todoForm.content.$invalid
+        && todoForm.content.$dirty}">
+    <input type="text" class="form-control focus" name="content"
+           placeholder="Content" autocomplete="off" required
+           ng-model="title">
+    <span class="has-error control-label" ng-show="
+        todoForm.content.$invalid && todoForm.content.$dirty">
+      Content is required.
+    </span>
+    <input type="text" class="form-control focus" name="content"
+           placeholder="Content" autocomplete="off" required
+           ng-model="description">
+    <input type="text" class="form-control focus" name="content"
+           placeholder="Content" autocomplete="off" required
+           ng-model="body">
+  </div>
+  <button class="btn btn-default" ng-disabled="todoForm.$invalid">Add</button>
+</form>
+<hr>
+<div class="list-group">
+  <a class="list-group-item" ng-repeat="n in news">{{n.title}}&nbsp;
+    <i class="glyphicon glyphicon-remove pull-right"
+       ng-click="removeNotice(n.id)">
+
+    </i>
+    <button class="pull-right padding" ng-click="detailNotice()"></button>
+  </a>
+
+
+</div>
