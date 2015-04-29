@@ -4,31 +4,49 @@
   <div class="form-group"
        ng-class="{'has-error': todoForm.content.$invalid
         && todoForm.content.$dirty}">
-    <input type="text" class="form-control focus" name="content"
-           placeholder="Content" autocomplete="off" required
+    <input type="text" class="form-control focus" name="title"
+           placeholder="titulo" autocomplete="off" required
            ng-model="title">
     <span class="has-error control-label" ng-show="
         todoForm.content.$invalid && todoForm.content.$dirty">
       Content is required.
     </span>
-    <input type="text" class="form-control focus" name="content"
-           placeholder="Content" autocomplete="off" required
+    <input type="text" class="form-control focus" name="description"
+           placeholder="descripcion" autocomplete="off" required
            ng-model="description">
-    <input type="text" class="form-control focus" name="content"
-           placeholder="Content" autocomplete="off" required
+    <input type="text" class="form-control focus" name="body"
+           placeholder="cuerpo" autocomplete="off" required
            ng-model="body">
+    <input type="text" class="form-control focus" name="categoria"
+           placeholder="categoria" autocomplete="off"
+           ng-model="categoria">
+    <input type="text" class="form-control focus" name="tags"
+           placeholder="tags" autocomplete="off"
+           ng-model="tags">
+    <input type="checkbox" class="form-control focus" name="destacado"
+           placeholder="Content" autocomplete="off"
+           ng-model="destacado">
   </div>
+  <input type="file"
+         file-input="files"
+         multiple
+    />
+  <button ng-click="upload()">Upload</button>
+  <li ng-repeat="file in files">{{file.name}}</li>
   <button class="btn btn-default" ng-disabled="todoForm.$invalid">Add</button>
 </form>
 <hr>
 <div class="list-group">
-  <a class="list-group-item" ng-repeat="n in news">{{n.title}}&nbsp;
+  <div class="list-group-item" ng-repeat="n in news">{{n.titulo}}&nbsp;
     <i class="glyphicon glyphicon-remove pull-right"
        ng-click="removeNotice(n.id)">
-
     </i>
-    <button class="pull-right padding" ng-click="detailNotice()"></button>
-  </a>
-
-
+    <a ui-sref="news.detail({id: n.id})">
+      <i class="glyphicon glyphicon-edit pull-right"></i>
+    </a>
+    <img src="/storage/images/{{n.image}}" alt=""/>
+  </div>
 </div>
+
+
+

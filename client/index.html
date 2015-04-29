@@ -7,8 +7,15 @@
   <title>LoopBack Angular example</title>
 
   <!-- Bootstrap -->
-  <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
   <link href="css/styles.css" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,17 +24,33 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body ng-app="uaiApp">
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<body ng-app="uaiApp" ng-controller="MainController">
+<!-- NavBar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">LoopBack Angular example</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
     </div>
+    <div id="navbar" class="navbar-collapse collapse">
+
+    </div><!--/.navbar-collapse -->
   </div>
+</nav>
+
+<div class="container-fluid">
+  <div ui-view></div>
 </div>
 
-<div class="container">
-  <div ui-view></div>
+<div class="wrapper" id="footer">
+  <div class="container">
+    <div id="footer-content"></div>
+  </div>
 </div>
 
 <!-- Dependencies -->
@@ -36,12 +59,19 @@
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-file-upload/angular-file-upload.js"></script>
+
 <!-- App -->
 <script src="js/lb-services.js"></script>
 <script src="js/app.js"></script>
 
-<script src="modules/core/app.core.js"> </script>
+<script src="modules/core/app.core.js"></script>
+<script src="modules/core/config/routes.js"></script>
+<script src="modules/core/config/config.js"></script>
 <script src="modules/core/controllers/mainController.js"></script>
 <script src="modules/core/controllers/homeController.js"></script>
+<script src="modules/core/directives/newsDirective.js"></script>
+<script src="modules/core/controllers/fileController.js"></script>
+
 </body>
 </html>

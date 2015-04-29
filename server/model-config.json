@@ -29,5 +29,25 @@
   "News": {
     "dataSource": "db",
     "public": true
+  },
+  "Noticias": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Categoria": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Tags": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Articulos": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Noticia": {
+    "dataSource": "db",
+    "public": true
   }
 }

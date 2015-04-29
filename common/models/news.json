@@ -3,20 +3,7 @@
   "plural": "News",
   "base": "PersistedModel",
   "idInjection": true,
-  "properties": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "string",
-      "required": true
-    },
-    "body": {
-      "type": "string",
-      "required": true
-    }
-  },
+  "properties": {},
   "validations": [],
   "relations": {},
   "acls": [],
