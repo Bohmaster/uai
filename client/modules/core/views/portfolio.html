@@ -1,0 +1,67 @@
+<div class="container">
+
+  <p class="gestion-title">
+    Portfolio
+  </p>
+
+  <form name="portfolioForm" novalidate>
+    <div class="form-group" ng-class="{'has-error': todoForm.content.$invalid && todoForm.content.$dirty}">
+
+      <accordion close-others="oneAtATime">
+
+        <accordion-group heading="Español" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+
+          <textarea class="form-control focus" name="descripcionEsp"
+          rows="4" cols="50"
+          placeholder="Descripcion" autocomplete="off"
+          ng-model="model.descripcionEsp">
+          </textarea>
+
+        </accordion-group>
+        <accordion-group heading="Ingles">
+
+          <textarea class="form-control focus" name="descripcionIng"
+          rows="4" cols="50"
+          placeholder="Descripcion" autocomplete="off"
+          ng-model="model.descripcionIng">
+          </textarea>
+
+        </accordion-group>
+        <accordion-group heading="Portugues">
+          <textarea class="form-control focus" name="descripcionPor"
+          rows="4" cols="50"
+          placeholder="Descripcion" autocomplete="off"
+          ng-model="model.descripcionPor">
+          </textarea>
+        </accordion-group>
+
+        <accordion-group heading="Frances">
+          <textarea class="form-control focus" name="descripcionFra"
+          rows="4" cols="50"
+          placeholder="Descripcion" autocomplete="off"
+          ng-model="model.descripcionFra">
+          </textarea>
+        </accordion-group>
+
+      </accordion>
+  </div>
+
+  <button class="btn btn-default margin" ng-disabled="todoForm.$invalid" ng-click="agregarPortfolio()">Agregar</button>
+</form>
+
+
+<div class="list-group">
+  <div class="list-group-item" ng-repeat="p in portfolios">
+    <a ng-click="editarPortfolio(p.id)">
+      <i class="glyphicon glyphicon-edit pull-right margin-left"></i>
+    </a>
+    <i class="glyphicon glyphicon-remove pull-right"
+    ng-click="borrarPortfolio(p.id)">
+    </i>
+  <div class="left title" style="font-size: 16px;">
+    {{ p.descripcionEsp }}
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+</div>

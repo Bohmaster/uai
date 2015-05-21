@@ -3,39 +3,25 @@ angular
   .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('app', {
-        url: '/app',
-        templateUrl: 'modules/core/views/app.html',
-        controller: 'MainController'
+      .state('home', {
+        url: '',
+        templateUrl: 'modules/core/views/home.html'
       })
-      .state('news', {
-        'url': '/news',
-        'templateUrl': 'modules/core/views/newsSection.html'
+      .state('profesionales', {
+        url: '/profesionales',
+        templateUrl: 'modules/core/views/profesionales.html',
+        controller: 'proController',
       })
-      .state('news.detail', {
-        url: '/:id',
-        templateUrl: 'modules/core/views/detail.html',
-        resolve: {
-          noticia: function(Noticia, $stateParams) {
-            return Noticia.findById({id: $stateParams.id},
-              function(data, headers) {
-                console.log(data)
-              },
-              function(err) {
-                console.log(err);
-              }
-            );
-          },
-          response: function(notice) {
-            console.log(notice);
-          }
-        },
-        controller: ['$scope', '$stateParams', 'News', 'noticia', function($scope, $stateParams, News, notice) {
-          var id = $stateParams.id;
-          $scope.notice = noticia;
-        }]
+      .state('portfolio', {
+        url: '/portfolio',
+        templateUrl: 'modules/core/views/portfolio.html',
+        controller: 'portController',
+      })
+      .state('noticias', {
+        url: '/noticias',
+        templateUrl: 'modules/core/views/noticias.html',
+        controller: 'notController',
       });
 
     $urlRouterProvider.otherwise('/app');
-
   }]);

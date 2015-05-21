@@ -1,0 +1,43 @@
+{
+  "name": "Notis",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "tituloEsp": {
+      "type": "string",
+      "required": true
+    },
+    "descripcionEsp": {
+      "type": "string"
+    },
+    "tituloIng": {
+      "type": "string"
+    },
+    "descripcionEng": {
+      "type": "string"
+    },
+    "propertyName69": {
+      "type": "string"
+    },
+    "tituloPor": {
+      "type": "string"
+    },
+    "descripcionPor": {
+      "type": "string"
+    },
+    "tituloFra": {
+      "type": "string"
+    },
+    "descripcionFra": {
+      "type": "string"
+    },
+    "imagen": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

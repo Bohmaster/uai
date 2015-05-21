@@ -1,0 +1,43 @@
+{
+  "name": "Profesional",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "tituloEsp": {
+      "type": "string"
+    },
+    "descripcionEsp": {
+      "type": "string"
+    },
+    "descripcionIng": {
+      "type": "string"
+    },
+    "tituloIng": {
+      "type": "string"
+    },
+    "foto": {
+      "type": "string"
+    },
+    "descripcionPor": {
+      "type": "string"
+    },
+    "descripcionFra": {
+      "type": "string"
+    },
+    "tituloPor": {
+      "type": "string"
+    },
+    "tituloFra": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

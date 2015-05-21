@@ -5,7 +5,11 @@
     "ACL": 1,
     "RoleMapping": 1,
     "Role": 1,
-    "News": 49
+    "News": 50,
+    "Profesional": 35,
+    "Portfolio": 3,
+    "Noticia": 3,
+    "Notis": 2
   },
   "models": {
     "User": {
@@ -64,6 +68,13 @@
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
-    "News": {}
+    "News": {},
+    "Profesional": {},
+    "Portfolio": {},
+    "Noticia": {
+      "1": "{\"tituloEsp\":\"sabe\",\"tituloIng\":\"\",\"tituloPor\":\"\",\"tituloFra\":\"\",\"descripcionEsp\":\"\",\"descripcionIng\":\"\",\"descripcionPor\":\"\",\"descripcionFra\":\"\",\"imagen\":\"\",\"id\":1,\"creado\":\"2015-05-15T19:19:50.918Z\"}",
+      "2": "{\"tituloEsp\":\"Clausuraron la cancha de boca\",\"tituloIng\":\"\",\"tituloPor\":\"\",\"tituloFra\":\"\",\"descripcionEsp\":\"Sage\",\"descripcionIng\":\"\",\"descripcionPor\":\"\",\"descripcionFra\":\"\",\"imagen\":\"logo.png\",\"creado\":\"2015-05-15T19:37:56.281Z\",\"id\":2}"
+    },
+    "Notis": {}
   }
 }

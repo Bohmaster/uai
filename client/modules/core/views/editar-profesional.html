@@ -1,0 +1,56 @@
+  <p class="gestion-title"> {{ profesional.nombre }} </p>
+  <hr>
+  <form name="todoForm" novalidate>
+    <div class="form-group" ng-class="{'has-error': todoForm.content.$invalid && todoForm.content.$dirty}">
+      <input type="text" class="form-control focus form-control-inline margin" name="nombre"
+             placeholder="Nombre" autocomplete="off" required
+             ng-model="profesional.nombre">
+      <span class="has-error control-label" ng-show="
+          todoForm.content.$invalid && todoForm.content.$dirty">
+        Content is required.
+      </span>
+      <accordion close-others="oneAtATime">
+      <accordion-group heading="Español" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+      <input type="text" class="form-control focus form-control-inline" name="tituloEsp"
+             placeholder="Titulo" autocomplete="off"
+             ng-model="profesional.tituloEsp">
+      <textarea class="form-control focus form-control-inline custom-text" name="descripcionEsp"
+             rows="4" cols="50"
+             placeholder="Descripcion" autocomplete="off"
+             ng-model="profesional.descripcionEsp"></textarea>
+      </accordion-group>
+      <accordion-group heading="Ingles">
+        <input type="text" class="form-control focus" name="tituloEsp"
+             placeholder="Titulo" autocomplete="off"
+             ng-model="profesional.tituloIng">
+        <input type="text" class="form-control focus" name="descripcionEsp"
+             placeholder="Descripcion" autocomplete="off"
+             ng-model="profesional.descripcionIng">
+      </accordion-group>
+      <accordion-group heading="Portugues">
+          <input type="text" class="form-control focus" name="tituloEsp"
+             placeholder="Titulo" autocomplete="off"
+             ng-model="tituloPor">
+          <input type="text" class="form-control focus" name="descripcionEsp"
+             placeholder="Descripcion" autocomplete="off"
+             ng-model="descripcionPor">
+      </accordion-group>
+      <accordion-group heading="Frances">
+          <input type="text" class="form-control focus" name="tituloEsp"
+             placeholder="Titulo" autocomplete="off"
+             ng-model="tituloFra">
+          <input type="text" class="form-control focus" name="descripcionEsp"
+             placeholder="Descripcion" autocomplete="off"
+             ng-model="descripcionFra">
+      </accordion-group>
+    </accordion>
+    <label for="files">Imagen</label>
+    <input type="file"
+           file-input="files"
+           class="margin"
+           multiple
+      />
+    <li>{{ profesional.foto }}</li>
+    </div>
+    <button class="btn btn-default" ng-disabled="todoForm.$invalid" ng-click="editarProfesional()">Editar</button>
+  </form>

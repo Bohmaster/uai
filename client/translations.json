@@ -1,0 +1,269 @@
+{ "esp" : { "contacto" : { "descripcion" : "Por favor, complete el siguiente formulario:",
+          "formulario" : { "cancelar" : "Cancelar",
+              "consulta" : "Comentarios/Consulta",
+              "correo" : "Correo electrónico",
+              "enviar" : "Enviar",
+              "nombre" : "Nombre",
+              "telefono" : "Telefono"
+            },
+          "titulo" : "Contáctenos"
+        },
+      "navbar" : [
+        "INICIO",
+        "NOSOTROS",
+        "SERVICIOS",
+        "PORTFOLIO",
+        "NOTIICAS Y EVENTOS",
+        "CONTACTENOS"
+      ],
+      "slider" : [
+        "Auditoría lingúistica para empresas",
+        "Closed Captioning",
+        "Traducción",
+        "Subtitulado",
+        "Doblaje"
+      ],
+      "servicios" : [ { "description" : [ "Jurídica",
+                "Economía y finanzas",
+                "Política internacional",
+                "Industria",
+                "Agronegocios",
+                "Mecanica y maquinarias",
+                "Energias sustentables"
+              ],
+            "imagen" : "images/traducciones.png",
+            "titulo" : "Traducciones"
+          },
+          { "description" : [ "Doblaje",
+                "Subtitulado oculto para sordomudos",
+                "Transcripcion de audio y video",
+                "Subtitulado",
+                "Películas",
+                "Telenovelas",
+                "Spots publicitarios",
+                "Documentales",
+                "Cortos",
+                "Videos educativos, institucionales y corporativos",
+                "Cursos online"
+              ],
+            "imagen" : "images/subtitulado.png",
+            "titulo" : "Traduccion Audiovisual"
+          },
+          { "description" : [ "Empresas",
+                "Instituciones",
+                "Organismos"
+              ],
+            "imagen" : "images/auditoria.png",
+            "titulo" : "Auditoria linguistica"
+          },
+          { "description" : [ "Rondas de negocios",
+                "Ferias y exposiciones",
+                "Conferencias",
+                "Cursos"
+              ],
+            "imagen" : "images/interprete.png",
+            "titulo" : "INTERPRETACION"
+          }
+        ]
+    },
+  "fra" : { "contacto" : { "descripcion" : "Merci de compléter le formulaire ci-dessous:",
+          "formulario" : { "cancelar" : "Effacer",
+              "consulta" : "Commentaire/Demande",
+              "correo" : "E-mail",
+              "enviar" : "Envoyer",
+              "nombre" : "Nom",
+              "telefono" : "Téléphone"
+            },
+          "titulo" : "Consultez-nous"
+        },
+        "navbar" : [
+          "ACCUEIL",
+          "À PROPOS DE NOUS",
+          "SERVICES",
+          "PORTFOLIO",
+          "ÉvÈnements",
+          "CONTACTEZ-NOUS"
+        ],
+        "slider": [
+          "Sous-titrage",
+          "Doublage",
+          "Closed Captioning",
+          "Audit Linguistique"
+        ],
+      "servicios" : [ { "description" : [ "Traduction juridique",
+                "Économie et finances",
+                "Politique internationale",
+                "Industrie",
+                "Agriaffaires",
+                "Méchanique et machines",
+                "Énergies renouveables"
+              ],
+            "imagen" : "images/traducciones.png",
+            "titulo" : "TRADUCTION"
+          },
+          { "description" : [ "Dubbing",
+                "Closed "
+              ],
+            "imagen" : "images/subtitulado.png",
+            "titulo" : "TRADUCTION AUDIOVISUELLE"
+          },
+          { "description" : [ "Entreprises",
+                "Institutions",
+                "Organismes"
+              ],
+            "imagen" : "images/auditoria.png",
+            "titulo" : "AUDIT LINGUISTIQUE"
+          },
+          { "description" : [ "Réunions",
+                "Foires commerciales",
+                "Conférences",
+                "Cours"
+              ],
+            "imagen" : "images/interprete.png",
+            "titulo" : "INTÉRPRETATION"
+          }
+        ]
+    },
+  "por" : { "contacto" : { "descripcion" : "Por favor complete o seguinte formulário:",
+          "formulario" : { "cancelar" : "Cancelar",
+              "consulta" : "Comentários/Consulta",
+              "correo" : "Correio eletrônico",
+              "enviar" : "Enviar",
+              "nombre" : "Nome",
+              "telefono" : "Telefone"
+            },
+          "titulo" : "Contacte conosco"
+        },
+      "portfolio" : { "descripcion" : "Descripcion aleman",
+          "doblaje" : { "descripcion" : "Com sua empresa partner MainPost, oferece tradução para dublagem, revisão e controle de qualidade de programação para cinema e televisão.",
+              "titulo" : "Doblaje portugal"
+            },
+          "peliculasExtranjeras" : "Peliculas portgal",
+          "peliculasNacionales" : "Peliculas portugal",
+          "titulo" : "Portfolio portugues"
+        },
+      "navbar" : [
+          "INÍCIO",
+          "QUEM SOMOS",
+          "SERVIÇOS",
+          "PORTFÓLIO",
+          "NOTÍCIAS E EVENTOS",
+          "FALE CONOSCO"
+        ],
+        "slider": [
+          "Legendadem",
+          "Dublagem",
+          "Closed Captioning",
+          "Auditoria Lingüistica"
+        ],
+      "servicios" : [ { "description" : [ "Tradução jurídica",
+                "Economia e finanças",
+                "Política internacional",
+                "Indústria",
+                "Agronegocios",
+                "Mecánica e Maquinarias",
+                "Energias sustentáveis"
+              ],
+            "imagen" : "images/traducciones.png",
+            "titulo" : "TRADUÇÃO"
+          },
+          { "description" : [ "Dublagem",
+                "Closed Captioning",
+                "Transcrição de áudio",
+                "Legendadem",
+                "Filmes",
+                "Novelas",
+                "Vídeos publicitários",
+                "Documentários",
+                "Curtas-metragens",
+                "Videos educativos, institucionais e corporativos",
+                "Cursos online"
+              ],
+            "imagen" : "images/subtitulado.png",
+            "titulo" : "TRADUÇÃO AUDIOVISUAL"
+          },
+          { "description" : [ "Empresas",
+                "Instituições",
+                "Organismos"
+              ],
+            "imagen" : "images/auditoria.png",
+            "titulo" : "AUDITORIA LINGUÍSTICA"
+          },
+          { "description" : [ "Ronda de negócios",
+                "Feiras e exposições comerciais",
+                "Conferências",
+                "Cursos"
+              ],
+            "imagen" : "images/interprete.png",
+            "titulo" : "INTERPRETACIÓN"
+          }
+        ]
+    },
+  "usa" : { "contacto" : { "descripcion" : "Please fill out the form below:",
+          "formulario" : { "cancelar" : "Cancel",
+              "consulta" : "Comments/Query",
+              "correo" : "Email address",
+              "enviar" : "Send",
+              "nombre" : "Name",
+              "telefono" : "Phone number"
+            },
+          "titulo" : "Contact Us"
+        },
+      "navbar" : [
+          "HOME",
+          "ABOUT US",
+          "SERVICES",
+          "PORTFOLIO",
+          "NEWS & EVENTS",
+          "CONTACT US"
+        ],
+      "slider" : [
+          "Subtitling",
+          "Dubbing",
+          "Closed Captioning",
+          "Language Audit"
+        ],
+      "servicios" : [ { "description" : [ "Legal translation",
+                "Economics & Finance",
+                "International Politics",
+                "Industry",
+                "Agribusiness",
+                "Mechanics and Machinery",
+                "Sustainable Energies"
+              ],
+            "imagen" : "images/traducciones.png",
+            "titulo" : "Translation"
+          },
+          { "description" : [ "Dubbing",
+                "Closed Captioning",
+                "Transcripts",
+                "Subtitling",
+                "Films",
+                "Soap Operas",
+                "Commercials",
+                "Documentaries",
+                "Short Films",
+                "Education, Institutional & Corporate videos",
+                "Online Courses"
+              ],
+            "imagen" : "images/subtitulado.png",
+            "titulo" : "Audiovisual Translation"
+          },
+          { "description" : [ "Businesses",
+                "Institutions",
+                "Agencies"
+              ],
+            "imagen" : "images/auditoria.png",
+            "titulo" : "LANGUAGE AUDIT"
+          },
+          { "description" : [ "Network meetings",
+                "Trade fairs & shows",
+                "Conferences",
+                "Courses"
+              ],
+            "imagen" : "images/interprete.png",
+            "titulo" : "INTERPRETING"
+          }
+        ]
+    }
+}

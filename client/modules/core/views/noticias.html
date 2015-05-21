@@ -1,0 +1,73 @@
+<div class="container">
+  <p class="gestion-title">Noticias</p>
+
+  <form name="todoForm" novalidate>
+    <div class="form-group" ng-class="{'has-error': todoForm.content.$invalid && todoForm.content.$dirty}">
+
+    <accordion close-others="oneAtATime">
+      <accordion-group heading="Español" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
+        <input type="text" class="form-control focus" name="tituloEsp"
+        placeholder="Titulo" autocomplete="off"
+        ng-model="model.tituloEsp">
+        <textarea class="form-control focus" name="descripcionEsp"
+        rows="4" cols="50"
+        placeholder="Descripcion" autocomplete="off"
+        ng-model="model.descripcionEsp"></textarea>
+      </accordion-group>
+      <accordion-group heading="Ingles">
+        <input type="text" class="form-control focus" name="tituloIng"
+        placeholder="Titulo" autocomplete="off"
+        ng-model="model.tituloIng">
+        <textarea class="form-control focus" name="descripcionIng"
+        rows="4" cols="50"
+        placeholder="Descripcion" autocomplete="off"
+        ng-model="model.descripcionIng"></textarea>
+      </accordion-group>
+      <accordion-group heading="Portugues">
+        <input type="text" class="form-control focus" name="tituloPor"
+        placeholder="Titulo" autocomplete="off"
+        ng-model="model.tituloPor">
+        <textarea class="form-control focus" name="descripcionPor"
+        rows="4" cols="50"
+        placeholder="Descripcion" autocomplete="off"
+        ng-model="model.descripcionPor"></textarea>
+      </accordion-group>
+      <accordion-group heading="Frances">
+        <input type="text" class="form-control focus" name="tituloFra"
+        placeholder="Titulo" autocomplete="off"
+        ng-model="model.tituloFra">
+        <input type="text" class="form-control focus" name="descripcionFra"
+        placeholder="Descripcion" autocomplete="off"
+        ng-model="model.descripcionFra">
+      </accordion-group>
+    </accordion>
+  </div>
+  <label for="files">Imagen</label>
+  <input type="file"
+  file-input="files"
+  class="margin"
+  multiple
+  />
+  <li ng-repeat="file in files">{{file.name}}</li>
+  <button class="btn btn-default margin" ng-disabled="todoForm.$invalid" ng-click="agregarNoticia()">Agregar</button>
+</form>
+
+<div class="list-group">
+  <div class="list-group-item" ng-repeat="n in noticias">
+    <a ng-click="editarNoticia(n.id)">
+      <i class="glyphicon glyphicon-edit pull-right margin-left"></i>
+    </a>
+    <i class="glyphicon glyphicon-remove pull-right"
+    ng-click="borrarNoticia(n.id)">
+  </i>
+  <img src="storage/images/{{ n.imagen }}" class="left">
+  <div class="left title">
+    {{ n.tituloEsp }}
+  </div>
+  <div class="left title" style="font-size: 16px;">
+    {{ n.descripcionEsp }}
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+</div>

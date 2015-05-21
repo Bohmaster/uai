@@ -26,27 +26,15 @@
     "dataSource": "db",
     "public": false
   },
-  "News": {
+  "Profesional": {
     "dataSource": "db",
     "public": true
   },
-  "Noticias": {
-    "dataSource": "db",
-    "public": false
-  },
-  "Categoria": {
+  "Portfolio": {
     "dataSource": "db",
     "public": true
   },
-  "Tags": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Articulos": {
-    "dataSource": "db",
-    "public": true
-  },
-  "Noticia": {
+  "Notis": {
     "dataSource": "db",
     "public": true
   }
