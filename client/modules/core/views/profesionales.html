@@ -1,5 +1,5 @@
 <div class="container">
-  <p class="gestion-title">Profesionales</p>
+  <p class="gestion-title" ng-click="lastProfesional()">Profesionales</p>
 
 
   <form name="todoForm" novalidate>
@@ -16,7 +16,7 @@
       <input type="text" class="form-control focus" name="tituloEsp"
              placeholder="Titulo" autocomplete="off"
              ng-model="model.tituloEsp">
-      <textarea class="form-control focus" name="descripcionEsp"
+      <textarea ui-tinymce class="form-control focus" name="descripcionEsp"
              rows="4" cols="50"
              placeholder="Descripcion" autocomplete="off"
              ng-model="model.descripcionEsp"></textarea>

@@ -105,14 +105,14 @@
                 "Closed "
               ],
             "imagen" : "images/subtitulado.png",
-            "titulo" : "TRADUCTION AUDIOVISUELLE"
+            "titulo" : "Traduction Audiovisuelle"
           },
           { "description" : [ "Entreprises",
                 "Institutions",
                 "Organismes"
               ],
             "imagen" : "images/auditoria.png",
-            "titulo" : "AUDIT LINGUISTIQUE"
+            "titulo" : "Audit Linguistique"
           },
           { "description" : [ "Réunions",
                 "Foires commerciales",

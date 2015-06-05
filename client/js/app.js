@@ -6,7 +6,10 @@ angular
   .module('uaiApp', [
     // declare dependencies
     'lbServices',
+
     'ui.router',
     'ui.bootstrap',
+    'ui.tinymce',
+
     'uai.module.core',
   ]);

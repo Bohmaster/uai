@@ -20,6 +20,18 @@ angular
           });
       }
 
+      $scope.lastProfesional = function() {
+        prof = Profesional.find({
+          filter: {
+            limit: 10,
+            order: 'id DESC'
+            }
+        }, function (data) {
+          $scope.prof = data;
+          console.log($scope.prof);
+        });
+      }
+
       $scope.agregarProfesional = function() {
           Profesional.create({
               'nombre': $scope.model.nombre,

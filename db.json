@@ -6,7 +6,7 @@
     "RoleMapping": 1,
     "Role": 1,
     "News": 50,
-    "Profesional": 35,
+    "Profesional": 39,
     "Portfolio": 3,
     "Noticia": 3,
     "Notis": 2
@@ -69,7 +69,11 @@
     "RoleMapping": {},
     "Role": {},
     "News": {},
-    "Profesional": {},
+    "Profesional": {
+      "35": "{\"nombre\":\"asdads\",\"tituloEsp\":\"asdas\",\"descripcionEsp\":\"asdasd\",\"descripcionIng\":\"sadasd\",\"tituloIng\":\"asdasda\",\"foto\":\"valeria_virga.png\",\"id\":35}",
+      "36": "{\"nombre\":\"asdasdasda\",\"tituloEsp\":\"asdadsa\",\"descripcionEsp\":\"dasada\",\"descripcionIng\":\"asdasdad\",\"tituloIng\":\"asdadsasd\",\"foto\":\"graciela_cuello.png\",\"id\":36}",
+      "38": "{\"nombre\":\"dfsdfsddfsfdsdsdsdadasdadasdasd\",\"tituloEsp\":\"sfsfsdfsdfsdfsd\",\"descripcionEsp\":\"\",\"descripcionIng\":\"\",\"tituloIng\":\"\",\"foto\":\"icono2.png\",\"id\":38}"
+    },
     "Portfolio": {},
     "Noticia": {
       "1": "{\"tituloEsp\":\"sabe\",\"tituloIng\":\"\",\"tituloPor\":\"\",\"tituloFra\":\"\",\"descripcionEsp\":\"\",\"descripcionIng\":\"\",\"descripcionPor\":\"\",\"descripcionFra\":\"\",\"imagen\":\"\",\"id\":1,\"creado\":\"2015-05-15T19:19:50.918Z\"}",
