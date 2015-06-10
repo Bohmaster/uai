@@ -47,4 +47,9 @@
 
 h1 {
   color: white;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+a:hover {
+  text-decoration: none !important;
 }

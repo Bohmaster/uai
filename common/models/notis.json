@@ -17,9 +17,6 @@
     "descripcionEng": {
       "type": "string"
     },
-    "propertyName69": {
-      "type": "string"
-    },
     "tituloPor": {
       "type": "string"
     },

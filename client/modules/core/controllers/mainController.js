@@ -1,8 +1,8 @@
 angular
   .module('uai.module.core')
     .controller('MainController',
-      ['$scope', '$http', '$log', 'Profesional',
-        function($scope, $http, $log, Profesional) {
+      ['$scope', '$http', '$log', 'Profesional', 'Notis', 'Portfolio',
+        function($scope, $http, $log, Profesional, Notis, Portfolio) {
 
         /**
         * TRANSLATIONS CONFIG
@@ -41,5 +41,40 @@ angular
         }
 
         cargarProfesionales();
+
+        // Noticia slider
+
+        function cargarNoticia() {
+          Notis.find({
+              filter: {
+                limit: 1,
+                order: 'id DESC'
+              }
+            }, function (data) {
+              $scope.noticia = data[0];
+              console.log($scope.noticia);
+            });
+          }
+
+
+        cargarNoticia();
+
+        function cargarNoticias() {
+          Notis.find(function(data) {
+            $scope.noticias = data;
+          }, function(err) {
+            console.log(err);
+          });
+        }
+
+        cargarNoticias();
+
+        function cargarPortfolio() {
+          Portfolio.find(function(data) {
+            $scope.porfolio = data[0];
+          });
+        }
+
+        cargarPortfolio();
 
     }]);

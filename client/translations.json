@@ -23,6 +23,23 @@
         "Subtitulado",
         "Doblaje"
       ],
+      "nosotros": {
+        "titulo": "Nosotros",
+        "descripcion": [
+          {
+            "titulo": "Especialización",
+            "descripcion": "Nuestros profesionales se capacitan constantemente en: Traducción, Subtitulado y subtitulado oculto, Interpretación, Auditoría lingüística en empresas."
+          },
+          {
+            "titulo": "Trabajo en equipo",
+            "descripcion": "Colaboración con el cliente. En festivales internacionales de cine, ferias comerciales o exposiciones, Connections acompaña siempre."
+          },
+          {
+            "titulo": "Alianzas",
+            "descripcion": "Celebramos alianzas estratégicas con diversas empresas del país, quienes nos acompañan en nuestros proyectos y con quienes crecemos día a día."
+          }
+        ]
+      },
       "servicios" : [ { "description" : [ "Jurídica",
                 "Economía y finanzas",
                 "Política internacional",
@@ -85,11 +102,29 @@
           "CONTACTEZ-NOUS"
         ],
         "slider": [
-          "Sous-titrage",
-          "Doublage",
+          "Audit Linguistique",
           "Closed Captioning",
-          "Audit Linguistique"
+          "Traduction",
+          "Sous-titrage",
+          "Doublage"
         ],
+        "nosotros": {
+          "titulo": "À propos de nous ",
+          "descripcion": [
+            {
+              "titulo": "Spécialisation",
+              "descripcion": "Nos professionnels suivent constamment des formations continues en : traduction, sous-titrage et sous-titrage en caché, interprétation et audit linguistique."
+            },
+            {
+              "titulo": "Travail en équipe",
+              "descripcion": "Aide aux clients lors des festivals internationaux de cinéma, des foires commerciales ou dans des expositions, Connections y est toujours."
+            },
+            {
+              "titulo": "Alliances",
+              "descripcion": "Nous faisons des alliances stratégiques avec plusieurs entreprises nationales qui nous accompagnent dans nos projets et dans nos développement chaque jour."
+            }
+          ]
+        },
       "servicios" : [ { "description" : [ "Traduction juridique",
                 "Économie et finances",
                 "Politique internationale",
@@ -101,8 +136,17 @@
             "imagen" : "images/traducciones.png",
             "titulo" : "TRADUCTION"
           },
-          { "description" : [ "Dubbing",
-                "Closed "
+          { "description" : [ "Doublage",
+                "Sous-titrage pour malentendants (Closed Captioning)",
+                "Transcription de documents audio",
+                "Sous-titrage films",
+                "Feulletons télévisés",
+                "Films publicitaires",
+                "Films documentaries",
+                "Films courts",
+                "Vidéos pédagogiques",
+                "Institutionnelles et corporatives",
+                "Cours en ligne"
               ],
             "imagen" : "images/subtitulado.png",
             "titulo" : "Traduction Audiovisuelle"
@@ -150,11 +194,28 @@
           "NOTÍCIAS E EVENTOS",
           "FALE CONOSCO"
         ],
+        "titulo": "À propos de nous",
+        "descripcion": [
+          {
+            "titulo": "Especialização",
+            "descripcion": "Nossos profissionais se capacitam constantemente em: Tradução, Legendado e legendado oculto, Interpretação consecutiva e simultânea, Auditoria linguística em empresas."
+          },
+          {
+            "titulo": "Trabalho em equipe",
+            "descripcion": "Colaboração com o cliente. Em festivais internacionais de cinema, feiras comerciais ou exposições, Connections Acompanha sempre."
+          },
+          {
+            "titulo": "Alianças",
+            "descripcion": "Celebramos alianças estratégicas com diversas empresas do país, que nos acompanham em nossos projetos e com quem crescemos dia a dia."
+          }
+        ]
+      },
         "slider": [
-          "Legendadem",
-          "Dublagem",
+          "Auditoria Lingüistica",
           "Closed Captioning",
-          "Auditoria Lingüistica"
+          "Tradução",
+          "Legendadem",
+          "Dublagem"
         ],
       "servicios" : [ { "description" : [ "Tradução jurídica",
                 "Economia e finanças",
@@ -180,14 +241,14 @@
                 "Cursos online"
               ],
             "imagen" : "images/subtitulado.png",
-            "titulo" : "TRADUÇÃO AUDIOVISUAL"
+            "titulo" : "Tradução Audiovisual"
           },
           { "description" : [ "Empresas",
                 "Instituições",
                 "Organismos"
               ],
             "imagen" : "images/auditoria.png",
-            "titulo" : "AUDITORIA LINGUÍSTICA"
+            "titulo" : "Auditoria Linguística"
           },
           { "description" : [ "Ronda de negócios",
                 "Feiras e exposições comerciais",
@@ -195,7 +256,7 @@
                 "Cursos"
               ],
             "imagen" : "images/interprete.png",
-            "titulo" : "INTERPRETACIÓN"
+            "titulo" : "Interpretación"
           }
         ]
     },
@@ -218,10 +279,11 @@
           "CONTACT US"
         ],
       "slider" : [
-          "Subtitling",
-          "Dubbing",
+          "Language Audit",
           "Closed Captioning",
-          "Language Audit"
+          "Translation",
+          "Subtitling",
+          "Dubbing"
         ],
       "servicios" : [ { "description" : [ "Legal translation",
                 "Economics & Finance",
@@ -254,7 +316,7 @@
                 "Agencies"
               ],
             "imagen" : "images/auditoria.png",
-            "titulo" : "LANGUAGE AUDIT"
+            "titulo" : "Language Audit"
           },
           { "description" : [ "Network meetings",
                 "Trade fairs & shows",
@@ -262,7 +324,7 @@
                 "Courses"
               ],
             "imagen" : "images/interprete.png",
-            "titulo" : "INTERPRETING"
+            "titulo" : "Interpreting"
           }
         ]
     }

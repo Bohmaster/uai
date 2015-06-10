@@ -32,7 +32,7 @@
             <a class="w-nav-brand w-clearfix" href="#inicio"><img class="imglogo" src="images/logo.png" width="203">
             </a>
             <nav class="w-nav-menu navmenu" role="navigation">
-              <a class="w-nav-link botonnav" ng-repeat="item in translated.navbar"> {{ item }}</a>
+              <a class="w-nav-link botonnav" ng-repeat="item in translated.navbar" href="#inicio"> {{ item }}</a>
             </nav>
             <div class="w-nav-button menubuttonresp">
               <div class="w-icon-nav-menu"></div>
@@ -74,7 +74,7 @@
           <div class="w-slide slide5">
             <div class="w-container contslid">
               <a class="w-inline-block linkslider" href="#NOTICIAS">
-                <p class="parraslider">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p><img class="imgnotislid" src="images/barcampba.jpg" width="521">
+                <p class="parraslider">{{ noticia.descripcionEsp }}</p><img class="imgnotislid" src="storage/images/{{noticia.imagen}}" width="521">
               </a>
             </div>
           </div>
@@ -135,16 +135,12 @@
       <div class="w-section seccnos">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">
-            <h2 class="secciones">Nosotros</h2>
+            <h2 class="secciones">{{ translated.nosotros.titulo }}</h2>
           </div>
         </div>
         <div class="w-container contnos">
-          <p class="titnos">Especialización
-            <br><em>Nuestros profesionales se capacitan constantemente en:Traducción, Subtitulado y subtitulado oculto, Interpretación, Auditoría lingüística en empresas.<br></em>
-            <br>Trabajo en equipo
-            <br><em>Colaboración con el cliente. En festivales internacionales de cine, ferias comerciales o&nbsp;exposiciones, Connections acompaña siempre.<br></em>
-            <br>Alianzas
-            <br><em>Celebramos alianzas estratégicas con diversas empresas del país, quienes nos acompañan en nuestros proyectos y con quienes crecemos día a día.</em>
+          <p class="titnos" ng-repeat="d in translated.nosotros.descripcion"> {{ d.titulo }}
+            <br><em>{{ d.descripcion }}</em>
           </p>
 
           <div class="w-row rownos" ng-repeat="p in profesionales">
@@ -573,48 +569,12 @@
             <h2 class="secciones">Noticias y eventos</h2>
           </div>
         </div>
-        <div class="w-container contnoti">
+        <div class="w-container contnoti" ng-repeat="n in noticias">
           <div class="w-row rownoti">
-            <div class="w-col w-col-4"><img class="imgnoti" src="images/barcampba.jpg">
+            <div class="w-col w-col-4"><img class="imgnoti" src="storage/images/{{n.imagen}}">
             </div>
             <div class="w-col w-col-8">
-              <p class="textnoti"><span>Lorem ipsum</span> dolor . Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-container contnoti">
-          <div class="w-row rownoti">
-            <div class="w-col w-col-4"><img class="imgnoti" src="images/barcampba.jpg">
-            </div>
-            <div class="w-col w-col-8">
-              <p class="textnoti">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-container contnoti">
-          <div class="w-row rownoti">
-            <div class="w-col w-col-4"><img class="imgnoti" src="images/barcampba.jpg">
-            </div>
-            <div class="w-col w-col-8">
-              <p class="textnoti">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-container contnoti">
-          <div class="w-row rownoti">
-            <div class="w-col w-col-4"><img class="imgnoti" src="images/barcampba.jpg">
-            </div>
-            <div class="w-col w-col-8">
-              <p class="textnoti">Lorem ipsum dolor<span> sit amet</span>, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
-            </div>
-          </div>
-        </div>
-        <div class="w-container contnoti">
-          <div class="w-row rownoti">
-            <div class="w-col w-col-4"><img class="imgnoti" src="images/barcampba.jpg">
-            </div>
-            <div class="w-col w-col-8">
-              <p class="textnoti">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <p class="textnoti">{{ n.descripcionEsp }}</p>
             </div>
           </div>
         </div>
