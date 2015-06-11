@@ -32,7 +32,7 @@
             <a class="w-nav-brand w-clearfix" href="#inicio"><img class="imglogo" src="images/logo.png" width="203">
             </a>
             <nav class="w-nav-menu navmenu" role="navigation">
-              <a class="w-nav-link botonnav" ng-repeat="(key, val) in translated.navbar" href="{{ navigation[key] }}"> {{ val }} </a>
+              <a class="w-nav-link botonnav" ng-repeat="item in translated.navbar" href="#inicio"> {{ item }}</a>
             </nav>
             <div class="w-nav-button menubuttonresp">
               <div class="w-icon-nav-menu"></div>
@@ -131,7 +131,7 @@
         </div>
       </div>
     </div>
-    <div class="divnosotros" id="nosotros">
+    <div class="divnosotros" id="NOSOTROS">
       <div class="w-section seccnos">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">
@@ -169,7 +169,7 @@
         </div>
       </div>
     </div>
-    <div class="divservicios" id="servicios">
+    <div class="divservicios" id="SERVICIOS">
       <div class="w-section seccservi">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">
@@ -180,29 +180,19 @@
           <div class="w-tabs tabs" data-duration-in="300" data-duration-out="100">
 
             <div class="w-tab-menu tabsmenu">
-              <a ng-repeat="(key, value) in translated.services.servicio"
-                 class="w-tab-link w-inline-block tablink"
-                 ng-class="{'w--current': tabSelected == key + 1}"
-                 data-w-tab="Tab {{ key + 1 }}"
-                 ng-click="updateState(key + 1)">
+              <a ng-repeat="(key, value) in translated.services.servicio" class="w-tab-link w-inline-block tablink" data-w-tab="Tab {{ key + 1 }}">
                 <div class="texttabs">{{ value.titulo }}</div>
               </a>
             </div>
 
             <div class="w-tab-content tabscontent">
-              <div class="w-tab-pane"
-                   ng-repeat="(key, value) in translated.services.servicio"
-                   ng-class="{'w--tab-active': tabSelected == key + 1}"
-                   data-w-tab="Tab {{ key + 1 }}">
+              <div class="w-tab-pane" ng-repeat="(key, value) in translated.services.servicio" data-w-tab="Tab {{ key + 1 }}">
                 <div ng-repeat="x in value.servicios">
-                  <h4 style="color: yellow; font-size: 20px;">
+                  <h4 style="color: white;">
                     {{ x.titulo }}
                   </h4>
                   <p class="textservi" ng-repeat="y in x.servicios">
-                    {{ y.descripcion }} <br/>
-                    <span style="padding-left: 15px" ng-repeat="a in y.areas">
-                      {{ a }} <br/>
-                    </span>
+                    {{ y.descripcion }}
                   </p>
                 </div>
               </div>
@@ -212,7 +202,7 @@
         </div>
       </div>
     </div>
-    <div class="divportfolio" id="portfolio">
+    <div class="divportfolio" id="PORTFOLIO">
       <div class="w-section seccportfolio">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">
@@ -463,7 +453,7 @@
         </div>
       </div>
     </div>
-    <div class="divnoticias" id="noticias">
+    <div class="divnoticias" id="NOTICIAS">
       <div class="w-section seccnoti">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">
@@ -481,7 +471,7 @@
         </div>
       </div>
     </div>
-    <div class="divcontacto" id="contacto">
+    <div class="divcontacto" id="CONTACTO">
       <div class="w-section secccontacto">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">

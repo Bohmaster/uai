@@ -43,9 +43,10 @@
           <input type="text" class="form-control focus" name="tituloEsp"
              placeholder="Titulo" autocomplete="off"
              ng-model="tituloFra">
-          <input type="text" class="form-control focus" name="descripcionEsp"
-             placeholder="Descripcion" autocomplete="off"
-             ng-model="descripcionFra">
+          <textarea ui-tinymce class="form-control focus" name="descripcionFra"
+                    rows="4" cols="50"
+                    placeholder="Descripcion" autocomplete="off"
+                    ng-model="model.descripcionFra"></textarea>
       </accordion-group>
     </accordion>
     </div>

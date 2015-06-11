@@ -23,7 +23,7 @@ angular
           var lang = e.target.id;
           $scope.lenguaje = lang;
           $scope.translated = $scope.traducciones[lang];
-          $log.log($scope.lenguaje);
+          $log.log($scope.translated);
         };
 
         /**
@@ -77,4 +77,23 @@ angular
 
         cargarPortfolio();
 
+       // TABS
+
+          $scope.tabSelected = 1;
+
+          $scope.updateState = function(state) {
+            $scope.tabSelected = state;
+            console.log(state);
+          }
+
+       // NAVIGATION
+
+          $scope.navigation = [
+            '#inicio',
+            '#nosotros',
+            '#servicios',
+            '#portfolio',
+            '#noticias',
+            'contacto'
+          ];
     }]);

@@ -1,331 +1,531 @@
-{ "esp" : { "contacto" : { "descripcion" : "Por favor, complete el siguiente formulario:",
-          "formulario" : { "cancelar" : "Cancelar",
-              "consulta" : "Comentarios/Consulta",
-              "correo" : "Correo electrónico",
-              "enviar" : "Enviar",
-              "nombre" : "Nombre",
-              "telefono" : "Telefono"
-            },
-          "titulo" : "Contáctenos"
+{
+  "esp":{
+    "contacto":{
+      "descripcion":"Por favor, complete el siguiente formulario:",
+      "formulario":{
+        "cancelar":"Cancelar",
+        "consulta":"Comentarios/Consulta",
+        "correo":"Correo electrónico",
+        "enviar":"Enviar",
+        "nombre":"Nombre",
+        "telefono":"Telefono"
+      },
+      "titulo":"Contáctenos"
+    },
+    "navbar":[
+      "INICIO",
+      "NOSOTROS",
+      "SERVICIOS",
+      "PORTFOLIO",
+      "NOTIICAS Y EVENTOS",
+      "CONTACTENOS"
+    ],
+    "slider":[
+      "Auditoría lingúistica para empresas",
+      "Closed Captioning",
+      "Traducción",
+      "Subtitulado",
+      "Doblaje"
+    ],
+    "services":{
+      "titulo": "Servicios",
+      "servicio": [
+        {
+        "titulo": "TRADUCCION TËCNICA",
+        "servicios":[
+          {
+            "titulo": "Traducción Jurídica",
+            "servicios":[
+              {
+                "descripcion": "Traducciones jurídicas del y al inglés.",
+                "areas": []
+              },
+              {
+                "descripcion": "Documentos jurídicos personales: partidas de nacimiento, actas de matrimonio, certificados de defunción, matrimonio y divorcio. Pasaportes y demás documentos personales. Programas de estudio, certificados analíticos, diplomas.",
+                "areas": []
+              },
+              {
+                "descripcion": "Derecho administrativo, derecho laboral, derecho procesal, civil y procesal penal, derecho de familia.",
+                "areas": []
+              },
+              {
+                "descripcion": "Capacitación y formación constante en el ámbito privado, universidades y Colegios de Traductores de todo el país.",
+                "areas": []
+              }
+            ]
+          },
+          {
+            "titulo": "Economía y finanzas",
+            "servicios":[
+              {
+                "descripcion": "Traducción de memoria y balance de las principales compañías del país, del y al inglés.",
+                "areas": []
+              },
+              {
+                "descripcion": "Traducción de informes contables.",
+                "areas": []
+              },
+              {
+                "descripcion": "Herramientas de traducción y glosarios para brindar un producto final preciso y confiable.",
+                "areas": []
+              }
+            ]
+          },
+          {
+            "titulo": "Industria",
+            "servicios":[
+              {
+                "descripcion": "Traducción de documentos y manuales en las siguientes áreas:",
+                "areas":[
+                  "Agricultura",
+                  "Agronegocios",
+                  "Mecánica",
+                  "Procesos de soja",
+                  "Maquinarias",
+                  "Energías sustentables"
+                ]
+              }
+            ]
+          }
+        ]
+       },
+       {
+         "titulo": "TRADUCCION AUDIOVISUAL"
+       },
+       {
+         "titulo": "AUDITORIA LINGUÍSTICA"
+       },
+       {
+         "titulo": "INTERPRETACIÓN"
+       }
+     ]
+    },
+    "nosotros":{
+      "titulo":"Nosotros",
+      "descripcion":[
+        {
+          "titulo":"Especialización",
+          "descripcion":"Nuestros profesionales se capacitan constantemente en: Traducción, Subtitulado y subtitulado oculto, Interpretación, Auditoría lingüística en empresas."
         },
-      "navbar" : [
-        "INICIO",
-        "NOSOTROS",
-        "SERVICIOS",
-        "PORTFOLIO",
-        "NOTIICAS Y EVENTOS",
-        "CONTACTENOS"
+        {
+          "titulo":"Trabajo en equipo",
+          "descripcion":"Colaboración con el cliente. En festivales internacionales de cine, ferias comerciales o exposiciones, Connections acompaña siempre."
+        },
+        {
+          "titulo":"Alianzas",
+          "descripcion":"Celebramos alianzas estratégicas con diversas empresas del país, quienes nos acompañan en nuestros proyectos y con quienes crecemos día a día."
+        }
+      ]
+    },
+    "portfolio":{
+      "titulo": "Portfolio",
+      "fixed": [
+        {
+         "titulo": "SUBTITULADO OCULTO",
+         "descripcion": "Transcripción para sordomudos para empresas de Europa y de los EE. UU. Servicios tercerizados a Televisa, Caracol y  MTV, entre otros."
+        },
+        {
+          "titulo": "TRADUCCION AUDIOVISUAL PARA SUBTITULADO",
+          "descripcion": "Connections mantiene una alianza estratégica con la empresa de subtitulado MainPost, ofrecemos traducción y adaptación de guiones para cine y televisión."
+        },
+        {
+          "titulo": "DOBLAJE",
+          "descripcion": "Con su empresa partner MainPost, se ofrece traducción para doblaje, revisión y control de calidad de programación para cine y televisión."
+        }
+      ]
+    },
+    "servicios":[
+      {
+        "description":[
+          "Jurídica",
+          "Economía y finanzas",
+          "Política internacional",
+          "Industria",
+          "Agronegocios",
+          "Mecanica y maquinarias",
+          "Energias sustentables"
+        ],
+        "imagen":"images/traducciones.png",
+        "titulo":"Traducciones"
+      },
+      {
+        "description":[
+          "Doblaje",
+          "Subtitulado oculto para sordomudos",
+          "Transcripcion de audio y video",
+          "Subtitulado",
+          "Películas",
+          "Telenovelas",
+          "Spots publicitarios",
+          "Documentales",
+          "Cortos",
+          "Videos educativos, institucionales y corporativos",
+          "Cursos online"
+        ],
+        "imagen":"images/subtitulado.png",
+        "titulo":"Traduccion Audiovisual"
+      },
+      {
+        "description":[
+          "Empresas",
+          "Instituciones",
+          "Organismos"
+        ],
+        "imagen":"images/auditoria.png",
+        "titulo":"Auditoria linguistica"
+      },
+      {
+        "description":[
+          "Rondas de negocios",
+          "Ferias y exposiciones",
+          "Conferencias",
+          "Cursos"
+        ],
+        "imagen":"images/interprete.png",
+        "titulo":"INTERPRETACION"
+      }
+    ]
+  },
+  "fra":{
+    "contacto":{
+      "descripcion":"Merci de compléter le formulaire ci-dessous:",
+      "formulario":{
+        "cancelar":"Effacer",
+        "consulta":"Commentaire/Demande",
+        "correo":"E-mail",
+        "enviar":"Envoyer",
+        "nombre":"Nom",
+        "telefono":"Téléphone"
+      },
+      "titulo":"Consultez-nous"
+    },
+    "navbar":[
+      "ACCUEIL",
+      "À PROPOS DE NOUS",
+      "SERVICES",
+      "PORTFOLIO",
+      "ÉvÈnements",
+      "CONTACTEZ-NOUS"
+    ],
+    "slider":[
+      "Audit Linguistique",
+      "Closed Captioning",
+      "Traduction",
+      "Sous-titrage",
+      "Doublage"
+    ],
+    "nosotros":{
+      "titulo":"À propos de nous",
+      "descripcion":[
+        {
+          "titulo":"Spécialisation",
+          "descripcion":"Nos professionnels suivent constamment des formations continues en : traduction, sous-titrage et sous-titrage en caché, interprétation et audit linguistique."
+        },
+        {
+          "titulo":"Travail en équipe",
+          "descripcion":"Aide aux clients lors des festivals internationaux de cinéma, des foires commerciales ou dans des expositions, Connections y est toujours."
+        },
+        {
+          "titulo":"Alliances",
+          "descripcion":"Nous faisons des alliances stratégiques avec plusieurs entreprises nationales qui nous accompagnent dans nos projets et dans nos développement chaque jour."
+        }
+      ]
+    },
+    "portfolio":{
+      "titulo": "Portfolio",
+      "fixed": [
+        {
+          "titulo": "CLOSED CAPTIONING",
+          "descripcion": "Connections offre sous-titrage pour sourds et malentendants en Europe  et aux États-Unis. Services externalisés pour Televisa, Caracol, MTV et d’autres."
+        },
+        {
+          "titulo": "TRADCUTION AUDIOVISUELLE ET SOUS-TITRAGE",
+          "descripcion": "Connections maintient une alliance stratégique avec MainPost grâce à laquelle elle traduit e adapte les scénarios des produits pour le cinéma et la télévision."
+        },
+        {
+          "titulo": "DOUBLAGE",
+          "descripcion": "Nous offrons, avec notre partenaire MainPost, des services de traduction pour doublage, révision et application des normes de qualité à des produits pour le cinéma et la télévision."
+        }
+      ]
+    },
+    "servicios":[
+      {
+        "description":[
+          "Traduction juridique",
+          "Économie et finances",
+          "Politique internationale",
+          "Industrie",
+          "Agriaffaires",
+          "Méchanique et machines",
+          "Énergies renouveables"
+        ],
+        "imagen":"images/traducciones.png",
+        "titulo":"TRADUCTION"
+      },
+      {
+        "description":[
+          "Doublage",
+          "Sous-titrage pour malentendants (Closed Captioning)",
+          "Transcription de documents audio",
+          "Sous-titrage films",
+          "Feulletons télévisés",
+          "Films publicitaires",
+          "Films documentaries",
+          "Films courts",
+          "Vidéos pédagogiques",
+          "Institutionnelles et corporatives",
+          "Cours en ligne"
+        ],
+        "imagen":"images/subtitulado.png",
+        "titulo":"Traduction Audiovisuelle"
+      },
+      {
+        "description":[
+          "Entreprises",
+          "Institutions",
+          "Organismes"
+        ],
+        "imagen":"images/auditoria.png",
+        "titulo":"Audit Linguistique"
+      },
+      {
+        "description":[
+          "Réunions",
+          "Foires commerciales",
+          "Conférences",
+          "Cours"
+        ],
+        "imagen":"images/interprete.png",
+        "titulo":"INTÉRPRETATION"
+      }
+    ]
+  },
+  "por":{
+    "contacto":{
+      "descripcion":"Por favor complete o seguinte formulário:",
+      "formulario":{
+        "cancelar":"Cancelar",
+        "consulta":"Comentários/Consulta",
+        "correo":"Correio eletrônico",
+        "enviar":"Enviar",
+        "nombre":"Nome",
+        "telefono":"Telefone"
+      },
+      "titulo":"Contacte conosco"
+    },
+    "portfolio":{
+      "titulo": "Portfólio",
+      "fixed": [
+        {
+          "titulo": "CLOSED CAPTIONING",
+          "descripcion": "Oferecemos Closed Captioning, legendadem para pessoas com dificuldades de audição e capacidades diferentes a clientes do mercado europeio e dos Estados Unidos. Serviços subcontratados a Televisa, Caracol e MTV, entre outros."
+        },
+        {
+          "titulo": "TRADUÇÃO AUDIOVISUAL E LEGENDADEM",
+          "descripcion": "Connections mantém uma aliança estratégica com MainPost, através da qual traduz e adapta guiões para cine e televisao."
+        },
+        {
+          "titulo": "DUBLAGEM",
+          "descripcion": "Com sua empresa partner MainPost, oferece tradução para dublagem, revisão e controle de qualidade de programação para cinema e televisão."
+        }
+      ]
+    },
+    "navbar":[
+      "INÍCIO",
+      "QUEM SOMOS",
+      "SERVIÇOS",
+      "PORTFÓLIO",
+      "NOTÍCIAS E EVENTOS",
+      "FALE CONOSCO"
+    ],
+    "nosotros":{
+      "titulo":"Quem somos",
+      "descripcion":[
+        {
+          "titulo":"Especialização",
+          "descripcion":"Nossos profissionais se capacitam constantemente em: Tradução, Legendado e legendado oculto, Interpretação consecutiva e simultânea, Auditoria linguística em empresas."
+        },
+        {
+          "titulo":"Trabalho em equipe",
+          "descripcion":"Colaboração com o cliente. Em festivais internacionais de cinema, feiras comerciais ou exposições, Connections Acompanha sempre."
+        },
+        {
+          "titulo":"Alianças",
+          "descripcion":"Celebramos alianças estratégicas com diversas empresas do país, que nos acompanham em nossos projetos e com quem crescemos dia a dia."
+        }
+      ]
+    },
+  "slider":[
+    "Auditoria Lingüistica",
+    "Closed Captioning",
+    "Tradução",
+    "Legendadem",
+    "Dublagem"
+  ],
+  "servicios":[
+    {
+      "description":[
+        "Tradução jurídica",
+        "Economia e finanças",
+        "Política internacional",
+        "Indústria",
+        "Agronegocios",
+        "Mecánica e Maquinarias",
+        "Energias sustentáveis"
       ],
-      "slider" : [
-        "Auditoría lingúistica para empresas",
+      "imagen":"images/traducciones.png",
+      "titulo":"TRADUÇÃO"
+    },
+    {
+      "description":[
+        "Dublagem",
         "Closed Captioning",
-        "Traducción",
-        "Subtitulado",
-        "Doblaje"
+        "Transcrição de áudio",
+        "Legendadem",
+        "Filmes",
+        "Novelas",
+        "Vídeos publicitários",
+        "Documentários",
+        "Curtas-metragens",
+        "Videos educativos, institucionais e corporativos",
+        "Cursos online"
       ],
-      "nosotros": {
-        "titulo": "Nosotros",
-        "descripcion": [
-          {
-            "titulo": "Especialización",
-            "descripcion": "Nuestros profesionales se capacitan constantemente en: Traducción, Subtitulado y subtitulado oculto, Interpretación, Auditoría lingüística en empresas."
-          },
-          {
-            "titulo": "Trabajo en equipo",
-            "descripcion": "Colaboración con el cliente. En festivales internacionales de cine, ferias comerciales o exposiciones, Connections acompaña siempre."
-          },
-          {
-            "titulo": "Alianzas",
-            "descripcion": "Celebramos alianzas estratégicas con diversas empresas del país, quienes nos acompañan en nuestros proyectos y con quienes crecemos día a día."
-          }
-        ]
-      },
-      "servicios" : [ { "description" : [ "Jurídica",
-                "Economía y finanzas",
-                "Política internacional",
-                "Industria",
-                "Agronegocios",
-                "Mecanica y maquinarias",
-                "Energias sustentables"
-              ],
-            "imagen" : "images/traducciones.png",
-            "titulo" : "Traducciones"
-          },
-          { "description" : [ "Doblaje",
-                "Subtitulado oculto para sordomudos",
-                "Transcripcion de audio y video",
-                "Subtitulado",
-                "Películas",
-                "Telenovelas",
-                "Spots publicitarios",
-                "Documentales",
-                "Cortos",
-                "Videos educativos, institucionales y corporativos",
-                "Cursos online"
-              ],
-            "imagen" : "images/subtitulado.png",
-            "titulo" : "Traduccion Audiovisual"
-          },
-          { "description" : [ "Empresas",
-                "Instituciones",
-                "Organismos"
-              ],
-            "imagen" : "images/auditoria.png",
-            "titulo" : "Auditoria linguistica"
-          },
-          { "description" : [ "Rondas de negocios",
-                "Ferias y exposiciones",
-                "Conferencias",
-                "Cursos"
-              ],
-            "imagen" : "images/interprete.png",
-            "titulo" : "INTERPRETACION"
-          }
-        ]
+      "imagen":"images/subtitulado.png",
+      "titulo":"Tradução Audiovisual"
     },
-  "fra" : { "contacto" : { "descripcion" : "Merci de compléter le formulaire ci-dessous:",
-          "formulario" : { "cancelar" : "Effacer",
-              "consulta" : "Commentaire/Demande",
-              "correo" : "E-mail",
-              "enviar" : "Envoyer",
-              "nombre" : "Nom",
-              "telefono" : "Téléphone"
-            },
-          "titulo" : "Consultez-nous"
-        },
-        "navbar" : [
-          "ACCUEIL",
-          "À PROPOS DE NOUS",
-          "SERVICES",
-          "PORTFOLIO",
-          "ÉvÈnements",
-          "CONTACTEZ-NOUS"
-        ],
-        "slider": [
-          "Audit Linguistique",
-          "Closed Captioning",
-          "Traduction",
-          "Sous-titrage",
-          "Doublage"
-        ],
-        "nosotros": {
-          "titulo": "À propos de nous ",
-          "descripcion": [
-            {
-              "titulo": "Spécialisation",
-              "descripcion": "Nos professionnels suivent constamment des formations continues en : traduction, sous-titrage et sous-titrage en caché, interprétation et audit linguistique."
-            },
-            {
-              "titulo": "Travail en équipe",
-              "descripcion": "Aide aux clients lors des festivals internationaux de cinéma, des foires commerciales ou dans des expositions, Connections y est toujours."
-            },
-            {
-              "titulo": "Alliances",
-              "descripcion": "Nous faisons des alliances stratégiques avec plusieurs entreprises nationales qui nous accompagnent dans nos projets et dans nos développement chaque jour."
-            }
-          ]
-        },
-      "servicios" : [ { "description" : [ "Traduction juridique",
-                "Économie et finances",
-                "Politique internationale",
-                "Industrie",
-                "Agriaffaires",
-                "Méchanique et machines",
-                "Énergies renouveables"
-              ],
-            "imagen" : "images/traducciones.png",
-            "titulo" : "TRADUCTION"
-          },
-          { "description" : [ "Doublage",
-                "Sous-titrage pour malentendants (Closed Captioning)",
-                "Transcription de documents audio",
-                "Sous-titrage films",
-                "Feulletons télévisés",
-                "Films publicitaires",
-                "Films documentaries",
-                "Films courts",
-                "Vidéos pédagogiques",
-                "Institutionnelles et corporatives",
-                "Cours en ligne"
-              ],
-            "imagen" : "images/subtitulado.png",
-            "titulo" : "Traduction Audiovisuelle"
-          },
-          { "description" : [ "Entreprises",
-                "Institutions",
-                "Organismes"
-              ],
-            "imagen" : "images/auditoria.png",
-            "titulo" : "Audit Linguistique"
-          },
-          { "description" : [ "Réunions",
-                "Foires commerciales",
-                "Conférences",
-                "Cours"
-              ],
-            "imagen" : "images/interprete.png",
-            "titulo" : "INTÉRPRETATION"
-          }
-        ]
+    {
+      "description":[
+        "Empresas",
+        "Instituições",
+        "Organismos"
+      ],
+      "imagen":"images/auditoria.png",
+      "titulo":"Auditoria Linguística"
     },
-  "por" : { "contacto" : { "descripcion" : "Por favor complete o seguinte formulário:",
-          "formulario" : { "cancelar" : "Cancelar",
-              "consulta" : "Comentários/Consulta",
-              "correo" : "Correio eletrônico",
-              "enviar" : "Enviar",
-              "nombre" : "Nome",
-              "telefono" : "Telefone"
-            },
-          "titulo" : "Contacte conosco"
-        },
-      "portfolio" : { "descripcion" : "Descripcion aleman",
-          "doblaje" : { "descripcion" : "Com sua empresa partner MainPost, oferece tradução para dublagem, revisão e controle de qualidade de programação para cinema e televisão.",
-              "titulo" : "Doblaje portugal"
-            },
-          "peliculasExtranjeras" : "Peliculas portgal",
-          "peliculasNacionales" : "Peliculas portugal",
-          "titulo" : "Portfolio portugues"
-        },
-      "navbar" : [
-          "INÍCIO",
-          "QUEM SOMOS",
-          "SERVIÇOS",
-          "PORTFÓLIO",
-          "NOTÍCIAS E EVENTOS",
-          "FALE CONOSCO"
-        ],
-        "titulo": "À propos de nous",
-        "descripcion": [
-          {
-            "titulo": "Especialização",
-            "descripcion": "Nossos profissionais se capacitam constantemente em: Tradução, Legendado e legendado oculto, Interpretação consecutiva e simultânea, Auditoria linguística em empresas."
-          },
-          {
-            "titulo": "Trabalho em equipe",
-            "descripcion": "Colaboração com o cliente. Em festivais internacionais de cinema, feiras comerciais ou exposições, Connections Acompanha sempre."
-          },
-          {
-            "titulo": "Alianças",
-            "descripcion": "Celebramos alianças estratégicas com diversas empresas do país, que nos acompanham em nossos projetos e com quem crescemos dia a dia."
-          }
-        ]
-      },
-        "slider": [
-          "Auditoria Lingüistica",
-          "Closed Captioning",
-          "Tradução",
-          "Legendadem",
-          "Dublagem"
-        ],
-      "servicios" : [ { "description" : [ "Tradução jurídica",
-                "Economia e finanças",
-                "Política internacional",
-                "Indústria",
-                "Agronegocios",
-                "Mecánica e Maquinarias",
-                "Energias sustentáveis"
-              ],
-            "imagen" : "images/traducciones.png",
-            "titulo" : "TRADUÇÃO"
-          },
-          { "description" : [ "Dublagem",
-                "Closed Captioning",
-                "Transcrição de áudio",
-                "Legendadem",
-                "Filmes",
-                "Novelas",
-                "Vídeos publicitários",
-                "Documentários",
-                "Curtas-metragens",
-                "Videos educativos, institucionais e corporativos",
-                "Cursos online"
-              ],
-            "imagen" : "images/subtitulado.png",
-            "titulo" : "Tradução Audiovisual"
-          },
-          { "description" : [ "Empresas",
-                "Instituições",
-                "Organismos"
-              ],
-            "imagen" : "images/auditoria.png",
-            "titulo" : "Auditoria Linguística"
-          },
-          { "description" : [ "Ronda de negócios",
-                "Feiras e exposições comerciais",
-                "Conferências",
-                "Cursos"
-              ],
-            "imagen" : "images/interprete.png",
-            "titulo" : "Interpretación"
-          }
-        ]
-    },
-  "usa" : { "contacto" : { "descripcion" : "Please fill out the form below:",
-          "formulario" : { "cancelar" : "Cancel",
-              "consulta" : "Comments/Query",
-              "correo" : "Email address",
-              "enviar" : "Send",
-              "nombre" : "Name",
-              "telefono" : "Phone number"
-            },
-          "titulo" : "Contact Us"
-        },
-      "navbar" : [
-          "HOME",
-          "ABOUT US",
-          "SERVICES",
-          "PORTFOLIO",
-          "NEWS & EVENTS",
-          "CONTACT US"
-        ],
-      "slider" : [
-          "Language Audit",
-          "Closed Captioning",
-          "Translation",
-          "Subtitling",
-          "Dubbing"
-        ],
-      "servicios" : [ { "description" : [ "Legal translation",
-                "Economics & Finance",
-                "International Politics",
-                "Industry",
-                "Agribusiness",
-                "Mechanics and Machinery",
-                "Sustainable Energies"
-              ],
-            "imagen" : "images/traducciones.png",
-            "titulo" : "Translation"
-          },
-          { "description" : [ "Dubbing",
-                "Closed Captioning",
-                "Transcripts",
-                "Subtitling",
-                "Films",
-                "Soap Operas",
-                "Commercials",
-                "Documentaries",
-                "Short Films",
-                "Education, Institutional & Corporate videos",
-                "Online Courses"
-              ],
-            "imagen" : "images/subtitulado.png",
-            "titulo" : "Audiovisual Translation"
-          },
-          { "description" : [ "Businesses",
-                "Institutions",
-                "Agencies"
-              ],
-            "imagen" : "images/auditoria.png",
-            "titulo" : "Language Audit"
-          },
-          { "description" : [ "Network meetings",
-                "Trade fairs & shows",
-                "Conferences",
-                "Courses"
-              ],
-            "imagen" : "images/interprete.png",
-            "titulo" : "Interpreting"
-          }
-        ]
+    {
+      "description":[
+        "Ronda de negócios",
+        "Feiras e exposições comerciais",
+        "Conferências",
+        "Cursos"
+      ],
+      "imagen":"images/interprete.png",
+      "titulo":"Interpretación"
     }
+  ]},
+  "usa":{
+    "contacto":{
+      "descripcion":"Please fill out the form below:",
+      "formulario":{
+        "cancelar":"Cancel",
+        "consulta":"Comments/Query",
+        "correo":"Email address",
+        "enviar":"Send",
+        "nombre":"Name",
+        "telefono":"Phone number"
+      },
+      "titulo":"Contact Us"
+    },
+    "navbar":[
+      "HOME",
+      "ABOUT US",
+      "SERVICES",
+      "PORTFOLIO",
+      "NEWS & EVENTS",
+      "CONTACT US"
+    ],
+    "nosotros":{
+      "titulo": "About us",
+      "descripcion":[
+        {
+          "titulo": "Especialization",
+          "descripcion": "Our translators specialize and constantly train in: Translation, Subtitling, Closed Captioning, Consecutive and Simultaneous Interpretation, and Business Language Audit."
+        },
+        {
+          "titulo": "Team Spirit",
+          "descripcion": "Collaborative work with our clients. In international film festivals, trade fairs and trade shows, Connections is always by your side."
+        },
+        {
+          "titulo": "Partnerships",
+          "descripcion": "We partner with other Argentinean companies, which support our projects and help us grow every day."
+        }
+      ]
+    },
+    "slider":[
+      "Language Audit",
+      "Closed Captioning",
+      "Translation",
+      "Subtitling",
+      "Dubbing"
+    ],
+    "portfolio":{
+      "titulo": "Portfolio",
+      "fixed": [
+        {
+          "titulo": "CLOSED CAPTIONING",
+          "descripcion": "We outsource services to the European and US audiovisual industries, namely Televisa, Caracol and MTV."
+        },
+        {
+          "titulo": "AUDIOVISUAL TRANSLATION AND SUBTITLING",
+          "descripcion": "Through a strategic partnership with the subtitling company MainPost, we offer translation and adaptation of film scripts."
+        },
+        {
+          "titulo": "DUBBING",
+          "descripcion": "rtenered with MainPost, we offer translation for dubbing and quality assurance of films and television programming."
+        }
+
+      ]
+    },
+    "servicios":[
+      {
+        "description":[
+          "Legal translation",
+          "Economics & Finance",
+          "International Politics",
+          "Industry",
+          "Agribusiness",
+          "Mechanics and Machinery",
+          "Sustainable Energies"
+        ],
+        "imagen":"images/traducciones.png",
+        "titulo":"Translation"
+      },
+      {
+        "description":[
+          "Dubbing",
+          "Closed Captioning",
+          "Transcripts",
+          "Subtitling",
+          "Films",
+          "Soap Operas",
+          "Commercials",
+          "Documentaries",
+          "Short Films",
+          "Education, Institutional & Corporate videos",
+          "Online Courses"
+        ],
+        "imagen":"images/subtitulado.png",
+        "titulo":"Audiovisual Translation"
+      },
+      {
+        "description":[
+          "Businesses",
+          "Institutions",
+          "Agencies"
+        ],
+        "imagen":"images/auditoria.png",
+        "titulo":"Language Audit"
+      },
+      {
+        "description":[
+          "Network meetings",
+          "Trade fairs & shows",
+          "Conferences",
+          "Courses"
+        ],
+        "imagen":"images/interprete.png",
+        "titulo":"Interpreting"
+      }
+    ]
+  }
 }
