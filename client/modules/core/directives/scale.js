@@ -48,13 +48,33 @@ angular.module('uai.module.core')
 
         elem.on('click', function() {
           if (!scope.opened) {
-            TweenMax.to(face, 0.6, {right: "0px", ease: Quad.easeInOut});
+            TweenMax.to(face, 0.6, {
+              right: "0px",
+              ease: Quad.easeInOut
+              }
+            );
             scope.opened = true;
           } else {
-            TweenMax.to(face, 0.6, {right: "-280px", ease: Quad.easeInOut});
+            TweenMax.to(face, 0.6, {
+              right: "-280px", ease: Quad.easeInOut
+              }
+            );
             scope.opened = false;
           }
         });
+      }
+    }
+  })
+  .directive('compile', function($compile) {
+    return {
+      restrict: 'A',
+      scope: {
+        data: '@compile'
+      },
+      link: function(scope, elem, attrs) {
+        var linkFn = $compile(scope.data);
+        var content = linkFn(scope);
+        elem.append(content);
       }
     }
   });

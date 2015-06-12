@@ -24,7 +24,7 @@ angular
       'descripcionEsp': $scope.model.descripcionEsp,
       'descripcionIng': $scope.model.descripcionIng,
       'descripcionPor': $scope.model.descripcionPor,
-      'descripcionFra': $scope.model.descripcionFra,
+      'descripcionFra': $scope.model.descripcionFra
       },
       function(success, headers) {
         console.log('New notice added sucessfuly');

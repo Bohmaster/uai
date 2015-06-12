@@ -16,7 +16,7 @@
       <input type="text" class="form-control focus" name="tituloEsp"
              placeholder="Titulo" autocomplete="off"
              ng-model="model.tituloEsp">
-      <textarea ui-tinymce class="form-control focus" name="descripcionEsp"
+      <textarea ui-tinymce="tinyMCEoptions" class="form-control focus" name="descripcionEsp"
              rows="4" cols="50"
              placeholder="Descripcion" autocomplete="off"
              ng-model="model.descripcionEsp"></textarea>
@@ -25,7 +25,7 @@
         <input type="text" class="form-control focus" name="tituloIng"
              placeholder="Titulo" autocomplete="off"
              ng-model="model.tituloIng">
-             <textarea ui-tinymce class="form-control focus" name="descripcionIng"
+             <textarea ui-tinymce="tinyMCEoptions" class="form-control focus" name="descripcionIng"
              rows="4" cols="50"
              placeholder="Descripcion" autocomplete="off"
              ng-model="model.descripcionIng"></textarea>
@@ -34,7 +34,7 @@
           <input type="text" class="form-control focus" name="tituloPor"
              placeholder="Titulo" autocomplete="off"
              ng-model="model.tituloPor">
-             <textarea ui-tinymce class="form-control focus" name="descripcionPor"
+             <textarea ui-tinymce="tinyMCEoptions" class="form-control focus" name="descripcionPor"
              rows="4" cols="50"
              placeholder="Descripcion" autocomplete="off"
              ng-model="model.descripcionPor"></textarea>
@@ -43,7 +43,7 @@
           <input type="text" class="form-control focus" name="tituloEsp"
              placeholder="Titulo" autocomplete="off"
              ng-model="tituloFra">
-          <textarea ui-tinymce class="form-control focus" name="descripcionFra"
+          <textarea ui-tinymce="tinyMCEoptions" class="form-control focus" name="descripcionFra"
                     rows="4" cols="50"
                     placeholder="Descripcion" autocomplete="off"
                     ng-model="model.descripcionFra"></textarea>
@@ -58,6 +58,9 @@
       />
     <li ng-repeat="file in files">{{file.name}}</li>
     <button class="btn btn-default" ng-disabled="todoForm.$invalid" ng-click="agregarProfesional()">Agregar</button>
+    <a href="http://www.resizeyourimage.com/" target="_blank">
+      Redimensionar imagen
+    </a>
   </form>
 
 
@@ -74,7 +77,8 @@
         {{ p.nombre }} ({{ p.tituloEsp }})
       </div>
       <div class="left title" style="font-size: 16px;">
-        {{ p.descripcionEsp }}
+        <p compile="{{p.descripcionEsp}}">
+        </p>
       </div>
       <div class="clear"></div>
     </div>

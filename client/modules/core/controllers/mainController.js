@@ -71,7 +71,7 @@ angular
 
         function cargarPortfolio() {
           Portfolio.find(function(data) {
-            $scope.porfolio = data[0];
+            $scope.portfolio = data[0];
           });
         }
 
@@ -84,7 +84,7 @@ angular
           $scope.updateState = function(state) {
             $scope.tabSelected = state;
             console.log(state);
-          }
+          };
 
        // NAVIGATION
 
@@ -94,6 +94,10 @@ angular
             '#servicios',
             '#portfolio',
             '#noticias',
-            'contacto'
+            '#contacto'
           ];
+
+          $scope.tinyMCEoptions = {
+            format: 'text'
+          }
     }]);

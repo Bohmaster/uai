@@ -51,6 +51,12 @@
   />
   <li ng-repeat="file in files">{{file.name}}</li>
   <button class="btn btn-default margin" ng-disabled="todoForm.$invalid" ng-click="agregarNoticia()">Agregar</button>
+    <a href="http://www.resizeyourimage.com/" target="_blank">
+      Redimensionar imagen
+    </a>
+    <span>
+      (300x180)
+    </span>
 </form>
 
 <div class="list-group">
@@ -65,8 +71,8 @@
   <div class="left title">
     {{ n.tituloEsp }}
   </div>
-  <div class="left title" style="font-size: 16px;">
-    {{ n.descripcionEsp }}
+  <div class="left title" style="font-size: 16px;" compile="{{ n.descripcionEsp }}">
+    <!-- news compiled description -->
   </div>
   <div class="clear"></div>
 </div>

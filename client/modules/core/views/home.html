@@ -153,15 +153,23 @@
                 <span ng-show="lenguaje == 'usa'">
                   {{ p.tituloIng }}
                 </span>
+                <span ng-show="lenguaje == 'fra'">
+                  {{ p.tituloFra }}
+                </span>
+                <span ng-show="lenguaje == 'por'">
+                  {{ p.tituloPor }}
+                </span>
               </p>
 
             </div>
             <div class="w-col w-col-9">
-              <p class="textnos" ng-show="lenguaje == 'esp'">
-                {{ p.descripcionEsp }}
+              <p compile="{{ p.descripcionEsp }}" class="textnos" ng-if="lenguaje == 'esp'">
               </p>
-              <p class="textnos" ng-show="lenguaje == 'usa'">
-                {{ p.descripcionIng }}
+              <p compile="{{ p.descripcionIng }}" class="textnos" ng-if="lenguaje == 'usa'">
+              </p>
+              <p compile="{{ p.descripcionFra }}" class="textnos" ng-if="lenguaje == 'fra'">
+              </p>
+              <p compile="{{ p.descripcionPor }}" class="textnos" ng-if="lenguaje == 'por'">
               </p>
             </div>
           </div>
@@ -195,7 +203,7 @@
                    ng-class="{'w--tab-active': tabSelected == key + 1}"
                    data-w-tab="Tab {{ key + 1 }}">
                 <div ng-repeat="x in value.servicios">
-                  <h4 style="color: yellow; font-size: 20px;">
+                  <h4 style="color: white; font-size: 20px;">
                     {{ x.titulo }}
                   </h4>
                   <p class="textservi" ng-repeat="y in x.servicios">
@@ -203,6 +211,7 @@
                     <span style="padding-left: 15px" ng-repeat="a in y.areas">
                       {{ a }} <br/>
                     </span>
+                    <img ng-if="y.meta" style="margin-left: 150px; margin-top: 20px;" src="{{ y.meta }}" alt=""/>
                   </p>
                 </div>
               </div>
@@ -220,76 +229,10 @@
           </div>
         </div>
         <div class="w-container contport">
-          <p class="portfolio">Estos son los clientes con los que Connections ha trabajado hasta el momento:
-            <br>TRADUCCIÓN
-            <br>
-            <br>&nbsp;&nbsp;Área jurídica
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;FOUNDCHILD
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Fundación Niños Unidos para el Mundo
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción de documentación en casos de restitución internacional de menores.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;MM&amp;G abogados
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducciones jurídicas de documentación, fusiones y adquisiciones de empresas.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;CPM Argentina
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción de documentación legal y financiera.
-            <br>
-            <br>&nbsp;&nbsp;Economía y finanzas
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Industrias Juan F. Secco S.A.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción de balances y documentos.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Aguas Provinciales de Santa Fe, Argentina
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción de informe anual para el Banco Mundial.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Interpretación ante la IFC (International Finance Corporation).
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Hillsborough County, Florida, EE. UU.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Procedimientos electorales en el estado de Florida. Revisión y edición de información electoral para los votantes, y todo lo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;concerniente a partidos políticos y candidatos para las elecciones presidenciales.
-            <br>
-            <br>&nbsp;&nbsp;Industria
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Pecom Agra, Argentina
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capacitación in-company. Proyecto de 4 años hasta lograr que el personal fuera lingüísticamente independiente.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Crown Iron Works Company, MN, EE. UU.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpretación y traducción en planta.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Curran International, TX, EE. UU.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interpretación en tareas de reparación de equipos.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Sisgra S.R.L.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción de sitio Web y productos de agronegocios.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Abelardo Cuffia S.A.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción de monitores de siembra.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Fric Rot S.A.I.C.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción y auditoría lingüística.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Industrias D’Ascanio S.R.L.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción de material para ferias y exposiciones.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Wiseros
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Traducción para Taller Ecologista sobre energías sustentables.
-            <br>
-            <br>AUDITORÍA Y CAPACITACIÓN
-            <br>&nbsp;&nbsp;Auditoría lingüística y capacitación en idiomas.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Fric Rot S.A.I.C.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Walker
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Coca-Cola - Rosario (servicio tercerizado de SET Idiomas)
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;LDC Argentina
-            <br>
-            <br>INTERPRETACIÓN
-            <br>&nbsp;&nbsp;Crown iron Works Company
-            <br>&nbsp;&nbsp;Frimetal
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Servicios de interpretación para los ingenieros de proyecto en plantas industriales de Argentina.
-            <br>&nbsp;&nbsp;Ortiz Fischer
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seminario sobre izaje con interpretación consecutiva.
-            <br>&nbsp;&nbsp;Foro de la UNESCO Conferencia en Rosario a cargo de Christer Lidzélius; Director de KaosPilot International. Modalidad: &nbsp;&nbsp;&nbsp;&nbsp;Interpretación consecutiva.
-            <br>&nbsp;&nbsp;Fulbright institute Seminario Internacional a cargo del historiador Randall Bennett Woods, Ph.D. “Estados Unidos en el Mundo &nbsp;&nbsp;&nbsp;&nbsp;Actual”. Modalidad: Interpretación simultánea en cabina.
-            <br>&nbsp;&nbsp;FEDERACIÓN AGRARIA ARGENTINA Conferencia a cargo de representantes de los Grupos Aveve y Boerenbond. Modalidad: &nbsp;&nbsp;&nbsp;&nbsp;consecutiva.
-            <br>&nbsp;&nbsp;Superbilliards Expo, Filadelfia, EE. UU. Modalidad: ronda de negocios.
-            <br>&nbsp;&nbsp;Presentación del libro best-seller de Wilbur Smith, The Quest.
-            <br>&nbsp;&nbsp;Ronda de negocios y visitas a AAPRESID, Bolsa de Comercio de Rosario, ACSOJA.
-            <br>&nbsp;&nbsp;Ronda de negocios. Sr. B. V. Mehta, Director Ejecutivo de The Solvent Extractors’ Association of India.
-            <br>&nbsp;&nbsp;Seminarios sobre Finanzas e Hipotecas dictados por el Sr. Sidney Rosenberg, Profesor de la Universidad de Florida, Universidad &nbsp;&nbsp;&nbsp;&nbsp;Austral. Modalidad: simultánea.
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Seminario sobre Economía global y cultura a cargo de la Dra. Gordana Pesakovic, Universidad Austral, Modalidad: simultánea.
-            <br>&nbsp;&nbsp;Inauguración de planta de biodiesel en San Lorenzo. Modalidad simultánea.
-            <br>&nbsp;&nbsp;Interpretación en planta de paneles de fibra de madera, Villa Guillermina. Modalidad: consecutiva.
-            <br>&nbsp;&nbsp;Conferencia sobre el Manifiesto Comunista, a cargo del Profesor Werner Bonefeld, Unnoba, Pergamino. Modalidad. Consecutiva.
-            <br>&nbsp;&nbsp;Seminario sobre Farm Bill, a cargo del Profesor Allan Gray, Universidad Austral. Modalidad: simultánea.
-            <br>&nbsp;&nbsp;Primer y Segundo Congreso Internacional de Optometría.&nbsp;Modalidad: simultánea, consecutiva y mesas de trabajo.
-            <br>&nbsp;&nbsp;Conferencia “SymbioCity y Transporte Urbano Sostenible”, a cargo del Dr. Hans G. Lundberg, organizada por la Embajada de &nbsp;&nbsp;&nbsp;&nbsp;Suecia y la Facultad de Ciencias Exactas, Ingeniería y Agrimensura. Modalidad: consecutiva, 3 horas reloj.
-            <br>&nbsp;&nbsp;Immaculée Iligabiza, intérpretes Francesca Calvo Di Marco y María Célica Tripicchio. Presentación de su libro Sobrevivir para &nbsp;&nbsp;&nbsp;&nbsp;contarlo, editorial Logos.
-            <br>&nbsp;&nbsp;David Brazier – counseling
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;Congreso Internacional de Metabolómica</p>
+          <p class="portfolio" compile="{{ portfolio.descripcionEsp }}" ng-if="lenguaje == 'esp'"></p>
+          <p class="portfolio" compile="{{ portfolio.descripcionIng }}" ng-if="lenguaje == 'ing'"></p>
+          <p class="portfolio" compile="{{ portfolio.descripcionFra }}" ng-if="lenguaje == 'fra'"></p>
+          <p class="portfolio" compile="{{ portfolio.descripcionPor }}" ng-if="lenguaje == 'por'"></p>
           <div class="divpublis">
             <div class="w-row rowpubli">
               <div class="w-col w-col-3"><img class="imgpublicidad" src="images/fric-rot2.png">
@@ -306,7 +249,7 @@
           {{ s.titulo }} <br/>
             {{ s.descripcion }}
           </p>
-          <div class="pelnacext">Doblaje de películas extranjeras</div>
+          <div class="pelnacext"> {{translated.portfolio.doblaje }}</div>
           <div class="w-row">
             <div class="w-col w-col-4">
               <div class="w-embed w-iframe">
@@ -342,7 +285,7 @@
             </div>
             <div class="w-col w-col-4"></div>
           </div>
-          <div class="pelnacext">Películas nacionales</div>
+          <div class="pelnacext">{{ translated.portfolio.nacionales }}</div>
           <div class="w-row">
             <div class="w-col w-col-4 colpelisnac">
               <div class="w-embed w-iframe">
@@ -360,7 +303,7 @@
               </div>
             </div>
           </div>
-          <div class="pelnacext">Películas extranjeras</div>
+          <div class="pelnacext">{{ translated.portfolio.extranjeras }}</div>
           <div class="w-slider slider2" data-animation="slide" data-duration="2600" data-infinite="1" data-nav-spacing="7" data-delay="7000" data-autoplay="1">
             <div class="w-slider-mask mask2">
               <div class="w-slide slide12">
@@ -475,7 +418,10 @@
             <div class="w-col w-col-4"><img class="imgnoti" src="storage/images/{{n.imagen}}">
             </div>
             <div class="w-col w-col-8">
-              <p class="textnoti">{{ n.descripcionEsp }}</p>
+              <p class="textnoti" compile="{{ n.descripcionEsp }}" ng-show="lenguaje == 'esp'"></p>
+              <p class="textnoti" compile="{{ n.descripcionIng }}" ng-show="lenguaje == 'ing'"></p>
+              <p class="textnoti" compile="{{ n.descripcionFra }}" ng-show="lenguaje == 'fra'"></p>
+              <p class="textnoti" compile="{{ n.descripcionPor }}" ng-show="lenguaje == 'por'"></p>
             </div>
           </div>
         </div>
@@ -520,7 +466,7 @@
   <div class="divcontienefooter">
     <div class="w-section seccfooter">
       <div class="w-container">
-        <div class="textfooter">Connections Servicios Idiomáticos®&nbsp;&nbsp;|&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;Todos los derechos reservados</div>
+        <div class="textfooter">Connections Servicios Idiomáticos®&nbsp;&nbsp;|&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;{{translated.derechos}}</div>
       </div>
     </div>
   </div>

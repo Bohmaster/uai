@@ -1479,6 +1479,7 @@ textarea.w-select {
 }
 .w-nav-link.w--current {
   color: #339ce1;
+  text-decoration: none;
 }
 .w-nav-menu {
   position: relative;

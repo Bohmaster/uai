@@ -17,7 +17,7 @@
       "NOSOTROS",
       "SERVICIOS",
       "PORTFOLIO",
-      "NOTIICAS Y EVENTOS",
+      "NOTICIAS Y EVENTOS",
       "CONTACTENOS"
     ],
     "slider":[
@@ -27,6 +27,7 @@
       "Subtitulado",
       "Doblaje"
     ],
+    "derechos": "Todos los derechos reservados",
     "services":{
       "titulo": "Servicios",
       "servicio": [
@@ -90,13 +91,128 @@
         ]
        },
        {
-         "titulo": "TRADUCCION AUDIOVISUAL"
+         "titulo": "TRADUCCION AUDIOVISUAL",
+         "servicios":[
+           {
+             "titulo": "Subtitulado y Closed Captioning",
+             "servicios":[
+               {
+                 "descripcion": "El subtitulado es un proceso minucioso que comprende: \r\nEl análisis del material y la preparación para la inserción de subtítulos. La traducción del texto sobre el guión y la imagen. El empleo de opciones lingüísticas accesibles para los espectadores de todas las regiones donde se proyectará la película. La edición de los subtítulos de modo que sean lingüísticamente correctos y respeten las restricciones de espacio y tiempo que impone la proyección en pantalla. Una exhaustiva revisión final de la sincronización de subtítulo e imagen."
+               },
+               {
+                 "descripcion": "En closed captioning, son necesarios el análisis y la adaptación de los contenidos audiovisuales para hacerlos accesibles en salas de cine, festivales, televisión pública y privada, DVD, y para personas con dificultades de audición y capacidades diferentes. La técnica de closed captioning involucra también descripciones de efectos de sonido, el tono de la voz o la manera de hablar. "
+               }
+             ]
+           },
+           {
+             "titulo": "Transcripción de audio",
+             "servicios":[
+               {
+                 "descripcion": "Conversión en texto escrito de cualquier tipo de documento de audio o video, como discursos, conferencias, debates, entrevistas y sesiones de capacitación. Desgrabación de audio a texto de películas y documentales."
+               }
+             ]
+           },
+           {
+             "titulo": "Doblage",
+             "servicios":[
+               {
+                 "descripcion": "Con su empresa partner MainPost, se ofrece traducción para doblaje, revisión y control de calidad de programación para cine y televisión."
+               }
+             ]
+           }
+         ]
        },
        {
-         "titulo": "AUDITORIA LINGUÍSTICA"
+         "titulo": "AUDITORIA LINGUÍSTICA",
+         "servicios":[
+           {
+             "titulo": "Servicio de auditoría",
+             "servicios":[
+               {
+                 "descripcion": "La auditoría lingüística es un servicio imprescindible tanto como herramienta de evaluación ante un proceso de selección, como herramienta de evaluación para desarrollar un plan de capacitación en una lengua extranjera. La auditoría se realiza en cada una de las competencias (capacidad de hablar, leer, escuchar y escribir) del idioma objeto de evaluación. Se evalúan los conocimientos del participante, las destrezas lingüísticas necesarias para el desarrollo del puesto, y la capacidad de la persona para enfrentar situaciones de comunicación."
+               }
+             ]
+           },
+           {
+             "titulo": "Beneficios",
+             "servicios":[
+               {
+                 "descripcion": "La instrumentación se basa en parámetros simples, claros y fácilmente medibles. Se realizan informes con parámetros acordados con la compañía solicitante. Le ayudamos a detectar las debilidades y fortalezas del participante como parte del proceso de selección y evaluación."
+               }
+             ]
+           },
+           {
+             "titulo": "Nuestro proceso de trabajo",
+             "servicios":[
+               {
+                 "descripcion": "1-Parámetros de evaluación sencillos, claros y precisos que permiten conocer la operatividad laboral del participante mediante:",
+                 "areas":[
+                   "El nivel de competencia lingüística del participante;",
+                   "El estilo de aprendizaje e inteligencias múltiples que el participante manifiesta;",
+                   "La descripción de objetivos;",
+                   "Los contenidos gramaticales."
+                 ]
+               },
+               {
+                 "descripcion": "2-Control de asistencia. Comunicación constante entre la compañía, el alumno y nosotros."
+               },
+               {
+                 "descripcion": "3-El participante es una figura activa en el aprendizaje. El programa se adapta al ritmo de aprendizaje del alumno, no al revés. El horario y la frecuencia de clases que necesita el alumno se fijan en función de la necesidad de la empresa y la posibilidad real del participante."
+               },
+               {
+                 "descripcion": "4-Encuestas de satisfacción. Permiten detectar si el programa se cumple exitosamente."
+               },
+               {
+                 "descripcion": "5-Ajustes",
+                 "areas":[
+                   "Se realizan permanentes registros y análisis del material utilizado. Estos permiten realizar ajustes en los contenidos y evaluación."
+                 ]
+               },
+               {
+                 "descripcion": "English for Specific Purposes",
+                 "areas":[
+                   "Agribusiness Programs"
+                 ],
+                 "meta": "images/anglia568.jpg"
+               }
+             ]
+           }
+         ]
        },
        {
-         "titulo": "INTERPRETACIÓN"
+         "titulo": "INTERPRETACIÓN",
+         "servicios":[
+           {
+             "titulo": "Modalidades",
+             "servicios":[
+               {
+                 "descripcion": "Ofrecemos servicios de interpretación en la modalidad consecutiva y simultánea. En la interpretación consecutiva, el intérprete toma notas mientras el orador pronuncia un discurso. Durante el discurso, el orador puede hacer pausas frecuentes para que el intérprete pueda reproducirlo en el idioma destino."
+               },
+               {
+                 "descripcion": "En la interpretación simultánea, el intérprete traduce oralmente (interpreta) inmediatamente el discurso del orador, usualmente en cabina, o bien mediante susurro."
+               },
+               {
+                 "descripcion": "Interpretaciones en ámbitos sociales, comerciales y académicos."
+               }
+             ]
+           },
+           {
+             "titulo": "Experiencia",
+             "servicios":[
+               {
+                 "descripcion": "Nuestros intérpretes se especializan en diversas áreas. Contamos con un equipo local y también con profesionales dispuestos a prestar servicios en el exterior.",
+                 "areas":[
+                   "Ronda de negocios",
+                   "Ferias y exposiciones comerciales",
+                   "Conferencias",
+                   "Cursos",
+                   "Visitas a plantas",
+                   "Turismo"
+                 ]
+               }
+             ]
+           }
+         ]
        }
      ]
     },
@@ -132,7 +248,10 @@
           "titulo": "DOBLAJE",
           "descripcion": "Con su empresa partner MainPost, se ofrece traducción para doblaje, revisión y control de calidad de programación para cine y televisión."
         }
-      ]
+      ],
+      "extranjeras": "Películas extranjeras",
+      "doblaje": "Doblaje",
+      "nacionales": "Películas nacionales"
     },
     "servicios":[
       {
@@ -231,6 +350,186 @@
         }
       ]
     },
+    "services":{
+      "titulo": "Services",
+      "servicio": [
+        {
+          "titulo": "TRADUCTION TECHNIQUE",
+          "servicios":[
+            {
+              "titulo": "Traduction juridique",
+              "servicios":[
+                {
+                  "descripcion": "Traductions juridiques depuis et vers l’anglais",
+                  "areas": []
+                },
+                {
+                  "descripcion": "documents juridiques personnels : extraits de naissance, actes de mariage, certificats de décès, de mariage et de divorce, passeports et autres documents personnels, programmes d’études, certificats analytiques et diplômes",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Droit administratif, droit du travail, droit processuel, civil et processuel pénal, droit de famille ",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Formation continue pour les particuliers, universités et ordres des traducteurs de tout le territoire",
+                  "areas": []
+                }
+              ]
+            },
+            {
+              "titulo": "Économie et finances",
+              "servicios":[
+                {
+                  "descripcion": "Traduction du bilan et mémoire des principales compagnies du pays, depuis et vers l'anglais",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Traduction de rapports comptables",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Outils de traduction et glossaires pour offrir un produit fini précis et confiable",
+                  "areas": []
+                }
+              ]
+            },
+            {
+              "titulo": "Industrie",
+              "servicios":[
+                {
+                  "descripcion": "Traduction de documents et de notices dans les domaines suivants :",
+                  "areas":[
+                    "Agriculture",
+                    "Agriaffaires",
+                    "Mécanique",
+                    "Processus du soja",
+                    "Machines",
+                    "Énergies renouvelables"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "TRADUCTION AUDIOVISUELLE",
+          "servicios":[
+            {
+              "titulo": "Sous-titrage et Closed Captioning ",
+              "servicios":[
+                {
+                  "descripcion": "Le sous-titrage est un processus minutieux qui comprend : L’analyse du matériel et la préparation pour l’insertion des sous-titres. La traduction du texte sur le livret et sur l’image. L’emploi des options linguistiques accessibles pour les spectateurs de toutes les régions où le film sera projeté. L’édition des sous-titres de façon à ce qu’ils soient linguistiquement corrects tout en respectant les restrictions d'espace et de temps de la projection en écran. Une révision finale exhaustive de la synchronisation des sous-titres et de l’image."
+                },
+                {
+                  "descripcion": "En closed captioning, l’analyse et l’adaptation des contenus audiovisuels sont nécessaires pour les rendre accessibles en salles de cinéma, festivals, télévision publique et privée, DVD et pour les personnes ayant des problèmes d'audition et des capacités différentes. La technique du closed captioning concerne aussi la description des effets de son, le ton de la voie et la manière de parler."
+                }
+              ]
+            },
+            {
+              "titulo": "Transcription de documents audio",
+              "servicios":[
+                {
+                  "descripcion": "Conversion en texte écrit de tout type de document audio ou vidéo, comme par exemple des discours, des conférences, des débats, des interviews et des séances de formation. aTranscription des documents audio de films et des documentaires"
+                }
+              ]
+            },
+            {
+              "titulo": "Doublage",
+              "servicios":[
+                {
+                  "descripcion": "Nous offrons, avec notre partenaire MainPost, des services de traduction pour doublage, révision et application des normes de qualité à des produits pour le cinéma et la télévision."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "AUDIT LINGUISTIQUE",
+          "servicios":[
+            {
+              "titulo": "Service d’audit",
+              "servicios":[
+                {
+                  "descripcion": "L’audit linguistique est un service essentiel aussi bien en tant qu’outil d’évaluation dans un processus de sélection que pour la mise en place d’un projet de formation dans une langue étrangère. L’audit a lieu dans chacune des compétences (expression orale, lecture, compréhension et écriture) de la langue évaluée. On évalue les connaissances du participant, ses capacités pour faire face aux différentes situations de communication ainsi que les compétences linguistiques requises pour le poste."
+                }
+              ]
+            },
+            {
+              "titulo": "Bénéfices",
+              "servicios":[
+                {
+                  "descripcion": "La mise en place est basée sur des paramètres simples, clairs et facilement mesurables. Nous faisons des rapports avec des paramètres accordés avec la compagnie qui a demandé le service. Une des étapes de notre processus de sélection et d’évaluation consiste à aider la compagnie à détecter les points forts et les points faibles du participant."
+                }
+              ]
+            },
+            {
+              "titulo": "Nos étapes de travail",
+              "servicios":[
+                {
+                  "descripcion": "1-Des paramètres d’évaluation simples, claires et précis qui permettent de connaître les capacités professionnelles du participant grâce :",
+                  "areas":[
+                    "au niveau de compétence linguistique du participant ;",
+                    "aux méthodes d’apprentissage et aux intelligences multiples que le participant révèle ;",
+                    "à la description des objectifs ;",
+                    "aux contenus grammaticaux."
+                  ]
+                },
+                {
+                  "descripcion": "2-Control d’assistance Communication constante entre la compagnie, le stagiaire et nous."
+                },
+                {
+                  "descripcion": "3-Le participant a une participation active dans l’apprentissage. Le programme s’adapte au rythme d’apprentissage du stagiaire, et non à l’envers. L’horaire et la fréquence des cours dont le stagiaire a besoin sont fixés en fonction du besoin de l’entreprise et des disponibilités du participant."
+                },
+                {
+                  "descripcion": "4-Enquêtes de satisfaction. Elles permettent de détecter si le programme est suivi de façon satisfaisante."
+                },
+                {
+                  "descripcion": "5-Ajustements",
+                  "areas":[
+                    "Nous analysons continuellement le matériel utilisé. Ces analyses nous permettent d’ajuster les contenus et l’évaluation si nécessaire."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "INTERPRÉTATION",
+          "servicios":[
+            {
+              "titulo": "Modalités",
+              "servicios":[
+                {
+                  "descripcion": "Nous offrons des services d’interprétation consécutive et simultanée. Lors de l’interprétation consécutive, l’interprète prend des notes pendant que l’orateur prononce son discours. Pendant son discours, l’orateur peut faire des pauses fréquentes pour que l’interprète puisse le reproduire dans la langue cible."},
+                {
+                  "descripcion": "Lors de l’interprétation simultanée, l'interprète traduit oralement (il interprète) en même temps que l'orateur parle ou bien, il interprète par chuchotage."
+                },
+                {
+                  "descripcion": "Interprétations dans le domaine social, commercial et académique"
+                }
+              ]
+            },
+            {
+              "titulo": "Expérience",
+              "servicios":[
+                {
+                  "descripcion": "Nos interprètes sont spécialisés en différents domaines. Nous comptons une équipe locale et des professionnels prêts à donner leurs services à l´étranger.",
+                  "areas":[
+                    "réunions d’affaires",
+                    "foires et expositions commerciales",
+                    "conférences",
+                    "stages",
+                    "visites à des usines",
+                    "tourisme"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     "portfolio":{
       "titulo": "Portfolio",
       "fixed": [
@@ -246,8 +545,12 @@
           "titulo": "DOUBLAGE",
           "descripcion": "Nous offrons, avec notre partenaire MainPost, des services de traduction pour doublage, révision et application des normes de qualité à des produits pour le cinéma et la télévision."
         }
-      ]
+      ],
+      "extranjeras": "Films étrangers",
+      "doblaje": "Doublage",
+      "nacionales": "Quelques films argentins"
     },
+    "derechos": "Tous droits réservés",
     "servicios":[
       {
         "description":[
@@ -313,6 +616,7 @@
       },
       "titulo":"Contacte conosco"
     },
+    "derechos": "Todos os direitos reservados",
     "portfolio":{
       "titulo": "Portfólio",
       "fixed": [
@@ -328,7 +632,10 @@
           "titulo": "DUBLAGEM",
           "descripcion": "Com sua empresa partner MainPost, oferece tradução para dublagem, revisão e controle de qualidade de programação para cinema e televisão."
         }
-      ]
+      ],
+      "extranjeras": "Filmes estrangeiros",
+      "doblaje": "Dublagem",
+      "nacionales": "Filmes nacionais"
     },
     "navbar":[
       "INÍCIO",
@@ -355,63 +662,249 @@
         }
       ]
     },
-  "slider":[
-    "Auditoria Lingüistica",
-    "Closed Captioning",
-    "Tradução",
-    "Legendadem",
-    "Dublagem"
-  ],
-  "servicios":[
-    {
-      "description":[
-        "Tradução jurídica",
-        "Economia e finanças",
-        "Política internacional",
-        "Indústria",
-        "Agronegocios",
-        "Mecánica e Maquinarias",
-        "Energias sustentáveis"
-      ],
-      "imagen":"images/traducciones.png",
-      "titulo":"TRADUÇÃO"
+    "services":{
+      "titulo": "Serviços",
+      "servicio": [
+        {
+          "titulo": "TRADUÇÃO TÉCNICA",
+          "servicios":[
+            {
+              "titulo": "Tradução jurídica",
+              "servicios":[
+                {
+                  "descripcion": "Traduções jurídicas do e ao inglês.",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Documentos jurídicos pessoais: certidão de nascimento, certidão de casamento, atestado de óbito, matrimônio e divórcio. Passaportes e demais documentos pessoais. Programas de estudo, Histórico escolar, diplomas.",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Direito administrativo, direito laboral, direito processual, civil e processual penal, direito de família.",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Capacitação e formação constante no âmbito privado, universidades e Colégios de Tradutores de todo o país.",
+                  "areas": []
+                }
+              ]
+            },
+            {
+              "titulo": "Economia e finanças",
+              "servicios":[
+                {
+                  "descripcion": "Tradução de memória e balanço das principais companhias do país, do e ao inglês.",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Relatórios contábeis.",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Ferramentas de tradução e glossários para oferecer um produto final preciso e confiável.",
+                  "areas": []
+                }
+              ]
+            },
+            {
+              "titulo": "Indústria",
+              "servicios":[
+                {
+                  "descripcion": "Tradução de documentos e manuais nas seguintes áreas:",
+                  "areas":[
+                    "Agricultura",
+                    "Agronegócios",
+                    "Mecânica",
+                    "Processos de soja",
+                    "Maquinarias",
+                    "Energias sustentáveis"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "TRADUÇÃO AUDIOVISUAL",
+          "servicios":[
+            {
+              "titulo": "Legendagem e Closed Captioning",
+              "servicios":[
+                {
+                  "descripcion": "A legendagem é um processo minucioso que compreende: A análise do material e a preparação para a inserção de legendas. A tradução do texto sobre o roteiro e a imagem. A utilização de opções linguísticas acessíveis para os espectadores de todas as regiões onde se projetará o filme. A edição das legendas de maneira que sejam linguísticamente corretas e respeitem as restrições de espaço que impõe a projeção na tela. Uma exaustiva revisão final da sincronização da legenda e da imagem. "},
+                {
+                  "descripcion": "Em closed captioning, é necessária a análise e a adaptação dos conteúdos audiovisuais a fim de torná-los acessíveis em salas de cinema, festivais, televisão pública e privada, DVD, e para pessoas com dificuldades de audição e capacidades diferentes. A técnica de closed captioning envolve também descrições de efeitos de som, o tom da voz ou a maneira de falar."
+                }
+              ]
+            },
+            {
+              "titulo": "Transcrição de áudio",
+              "servicios":[
+                {
+                  "descripcion": "Conversão em texto escrito de qualquer tipo de documento de áudio ou vídeo, como discursos, conferências, debates, entrevistas e  sessões de capacitação. Degravação de áudio a texto de filmes e documentário"
+                }
+              ]
+            },
+            {
+              "titulo": "Dublagem",
+              "servicios":[
+                {
+                  "descripcion": "Com sua empresa partner MainPost, oferece tradução para dublagem, revisão e controle de qualidade de programação para cinema e televisão."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "AUDITORIA LINGUÍSTICA",
+          "servicios":[
+            {
+              "titulo": "Serviço de auditoria",
+              "servicios":[
+                {
+                  "descripcion": "A auditoria linguística é um serviço imprescindível tanto como ferramenta de avaliação frente a um processo de seleção, como ferramenta de avaliação para desenvolver um plano de capacitação em uma língua estrangeira. A auditoria realiza-se em cada uma das competências (capacidade de falar, ler, escutar e escrever) do idioma objeto de avaliação. Avaliam-se os conhecimentos do participante, as destrezas linguísticas necessárias para o desenvolvimento do posto, e a capacidade da pessoa para enfrentar situações de comunicação."
+                }
+              ]
+            },
+            {
+              "titulo": "Benefícios",
+              "servicios":[
+                {
+                  "descripcion": "A instrumentação se baseia em parâmetros simples, claros e fáceis de serem medidos. Realizam-se relatórios com os parâmetros acordados com a companhia solicitante. Ajudamos a detectar as debilidades e as fortalezas do participante como parte do processo de seleção e avaliação."
+                }
+              ]
+            },
+            {
+              "titulo": "Nosso processo de trabalho",
+              "servicios":[
+                {
+                  "descripcion": "1-Parâmetros de avaliação simples, claros e precisos que permitam conhecer a operatividade laboral do participante mediante:",
+                  "areas":[
+                    "O nível de competência linguística do participante;",
+                    "O estilo de aprendizagem e inteligências múltiplas que o participante manifesta;",
+                    "A descrição dos objetivos;",
+                    "Os conteúdos gramaticais."
+                  ]
+                },
+                {
+                  "descripcion": "2-Controle de assistência. Comunicação constante entre a companhia, o aluno e nós."
+                },
+                {
+                  "descripcion": "3-O participante é uma figura ativa na aprendizagem. O programa adapta-se ao ritmo de aprendizagem do aluno, não ao contrário. O horário e a frequência de aulas que o aluno necessita se fixam em função da necessidade da empresa e da possibilidade real do participante."},
+                {
+                  "descripcion": "4-Pesquisas de satisfação. Permitem detectar se o programa se cumpre exitosamente."
+                },
+                {
+                  "descripcion": "5-Ajustes",
+                  "areas":[
+                   "Realizam-se permanentes registros e análises do material utilizado. Isto é o que permite realizar os ajustes necessários aos conteúdos e à avaliação."
+                  ]
+                },
+                {
+                  "descripcion": "Cursos de português para estrangeiros",
+                  "areas":[
+                    "Certificado de Proficiência em Língua Portuguesa para Estrangeiros"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "INTERPRETAÇÃO",
+          "servicios":[
+            {
+              "titulo": "Modalidades",
+              "servicios":[
+                {
+                  "descripcion": "Oferecemos serviços de interpretação na modalidade consecutiva e simultânea. Na interpretação consecutiva, o intérprete toma notas enquanto o orador pronuncia um discurso. Durante o discurso, o orador pode fazer pausas frequentes para que o intérprete possa reproduzi-lo no idioma destino."
+                },
+                {
+                  "descripcion": "Na interpretação simultânea, o intérprete traduz oralmente (interpreta) imediatamente o discurso do orador, usualmente na cabina, ou bem mediante sussurro."
+                },
+                {
+                  "descripcion": "Interpretações em âmbitos sociais, comerciais e acadêmicos."
+                }
+              ]
+            },
+            {
+              "titulo": "Experiência",
+              "servicios":[
+                {
+                  "descripcion": "Nossos intérpretes se especializam em diversas áreas. Contamos com uma equipe local e também com profissionais dispostos a prestar serviços no exterior.",
+                  "areas":[
+                    "Ronda de negócios",
+                    "Feiras e exposições comerciais",
+                    "Conferências",
+                    "Cursos",
+                    "Visitas a plantas",
+                    "Turismo"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
-    {
-      "description":[
-        "Dublagem",
-        "Closed Captioning",
-        "Transcrição de áudio",
-        "Legendadem",
-        "Filmes",
-        "Novelas",
-        "Vídeos publicitários",
-        "Documentários",
-        "Curtas-metragens",
-        "Videos educativos, institucionais e corporativos",
-        "Cursos online"
-      ],
-      "imagen":"images/subtitulado.png",
-      "titulo":"Tradução Audiovisual"
-    },
-    {
-      "description":[
-        "Empresas",
-        "Instituições",
-        "Organismos"
-      ],
-      "imagen":"images/auditoria.png",
-      "titulo":"Auditoria Linguística"
-    },
-    {
-      "description":[
-        "Ronda de negócios",
-        "Feiras e exposições comerciais",
-        "Conferências",
-        "Cursos"
-      ],
-      "imagen":"images/interprete.png",
-      "titulo":"Interpretación"
-    }
+    "slider":[
+      "Auditoria Lingüistica",
+      "Closed Captioning",
+      "Tradução",
+      "Legendadem",
+      "Dublagem"
+    ],
+    "derechos": "Todos os direitos reservados",
+    "servicios":[
+      {
+        "description":[
+          "Tradução jurídica",
+          "Economia e finanças",
+          "Política internacional",
+          "Indústria",
+          "Agronegocios",
+          "Mecánica e Maquinarias",
+          "Energias sustentáveis"
+        ],
+        "imagen":"images/traducciones.png",
+        "titulo":"TRADUÇÃO"
+      },
+      {
+        "description":[
+          "Dublagem",
+          "Closed Captioning",
+          "Transcrição de áudio",
+          "Legendadem",
+          "Filmes",
+          "Novelas",
+          "Vídeos publicitários",
+          "Documentários",
+          "Curtas-metragens",
+          "Videos educativos, institucionais e corporativos",
+          "Cursos online"
+        ],
+        "imagen":"images/subtitulado.png",
+        "titulo":"Tradução Audiovisual"
+      },
+      {
+        "description":[
+          "Empresas",
+          "Instituições",
+          "Organismos"
+        ],
+        "imagen":"images/auditoria.png",
+        "titulo":"Auditoria Linguística"
+      },
+      {
+        "description":[
+          "Ronda de negócios",
+          "Feiras e exposições comerciais",
+          "Conferências",
+          "Cursos"
+        ],
+        "imagen":"images/interprete.png",
+        "titulo":"Interpretación"
+      }
   ]},
   "usa":{
     "contacto":{
@@ -451,6 +944,193 @@
         }
       ]
     },
+    "services":{
+      "titulo": "Services",
+      "servicio": [
+        {
+          "titulo": "TECHNICAL TRANSLATION",
+          "servicios":[
+            {
+              "titulo": "Legal translation",
+              "servicios":[
+                {
+                  "descripcion": "Legal translations from English into Spanish and vice versa. ",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Personal legal documents: birth/marriage/death/divorce certificates, marriage licenses. Passports and other personal documents. Syllabuses and curricula, studies transcripts, diplomas.",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Administrative Law, Labor Law, Procedural Law, Civil and Criminal Procedure Law, Family Law.",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Our professionals receive constant training and updating at universities and professional associations of sworn translators across the country.",
+                  "areas": []
+                }
+              ]
+            },
+            {
+              "titulo": "Economics and Finance",
+              "servicios":[
+                {
+                  "descripcion": "Translation from English into Spanish and vice versa of annual reports and balance sheets for leading companies in the country. ",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Translation of financial statements and annual reports",
+                  "areas": []
+                },
+                {
+                  "descripcion": "Use of CAT (Computer-Assisted Translation) tools and glossaries to offer an accurate and reliable product.",
+                  "areas": []
+                }
+              ]
+            },
+            {
+              "titulo": "Industry",
+              "servicios":[
+                {
+                  "descripcion": "Translation of documents and procedure manuals on the following fields: ",
+                  "areas":[
+                    "Agriculture",
+                    "Agribusiness",
+                    "Mechanics",
+                    "Soybean processing",
+                    "Machinery",
+                    "Sustainable energies"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "AUDIOVISUAL TRANSLATION",
+          "servicios":[
+            {
+              "titulo": "Subtitling and Closed Captioning",
+              "servicios":[
+                {
+                  "descripcion": "Subtitling is a complex process which entails: Material analysis and preparation for the subtitle insertion. Text translation, taking into account what is written on the film script and what is shown on the screen. Subtitle editing, to check they are linguistically correct and fit into the limited space and time required to display the captions. A thorough review to ensure that the subtitle is in perfect synch with the image, so that the subtitle is displayed in the exact moment and during the exact time"
+                },
+                {
+                  "descripcion": "In the case of Closed Captioning, analysis and adaptation of the audiovisual contents are necessary to make them suitable for their screening on movie theatres, festivals, public or private TV stations, and for the deaf and hard of hearing people. The closed captioning technique also includes the description of sound effects, tones of voices or ways of speaking."
+                }
+              ]
+            },
+            {
+              "titulo": "Transcripts",
+              "servicios":[
+                {
+                  "descripcion": "Adaptation of all kind of audio or video documents, such as speeches, conferences, debates, interviews, or training sessions, into a written document. Transcription of movies and documentaries."
+                }
+              ]
+            },
+            {
+              "titulo": "Dubbing",
+              "servicios":[
+                {
+                  "descripcion": "Partenered with MainPost, we offer translation for dubbing and quality assurance of films and television programming."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "LENGUAGE AUDIT",
+          "servicios":[
+            {
+              "titulo": "Language Audit Services",
+              "servicios":[
+                {
+                  "descripcion": "Linguistic auditing is of the utmost importance when it comes to recruiting staff and as a tool to develop an appropriate training plan. Each of the competences (reading, speaking, listening and writing) is evaluated in the target language. The participants are assessed on their knowledge of the target language, on their abilities to address communicative situations and on the linguistic skills required for the work position."
+                }
+              ]
+            },
+            {
+              "titulo": "Benefits",
+              "servicios":[
+                {
+                  "descripcion": "The assessment is based on simple, clear and easy to measure parameters, defined according to the company’s needs. Reports are elaborated taking these parameters into account. We help companies detect people’s weaknesses and strengths as part of the recruitment and assessment process."}
+              ]
+            },
+            {
+              "titulo": "How we work",
+              "servicios":[
+                {
+                  "descripcion": "1- We use simple, clear and accurate parameters to assess the candidates’ suitability for the work position, such as:",
+                  "areas":[
+                    "Proficiency level of the participant;",
+                    "Learning style and multiple intelligences shown by the participant;",
+                    "Goals;",
+                    "Grammatical contents."
+                  ]
+                },
+                {
+                  "descripcion": "2-Attendance monitoring. Permanent communication among the company, the student and our firm."
+                },
+                {
+                  "descripcion": "3-Students are active participants in their learning processes. The program is adapted to each student’s learning pace and not the other way round. Timetables and lessons frequency are established according to the company’s needs and to the student’s real possibilities."
+                },
+                {
+                  "descripcion": "4-Satisfaction polls are used to determine the effectiveness of the programs."
+                },
+                {
+                  "descripcion": "5-Customized programs",
+                  "areas":[
+                    "The material used is constantly checked and reviewed in order to adjust contents and assessment. "
+                  ]
+                },
+                {
+                  "descripcion": "English for Specific Purposes",
+                  "areas":[
+                    "Agribusiness Programs"
+                  ],
+                  "meta": "images/anglia568.jpg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "INTERPRETING",
+          "servicios":[
+            {
+              "titulo": "Modalities",
+              "servicios":[
+                {
+                  "descripcion": "We offer simultaneous and consecutive interpreting services. In consecutive interpreting, the interpreter takes notes as the speaker’s speech progresses (in the source language). When the speaker comes to a pause, the interpreter renders the message in the target language."
+                },
+                {
+                  "descripcion": "In simultaneous interpreting, the interpreter renders an oral translation while the source-language speaker continuously speaks. In this modality, the interpreter is usually sitting in an interpreting booth or, if the audience is small, the interpreter is in close proximity to the speaker and to the audience in order to whisper the message to them."
+                },
+                {
+                  "descripcion": "Interpreting in social, business and academic events."
+                }
+              ]
+            },
+            {
+              "titulo": "Experience",
+              "servicios":[
+                {
+                  "descripcion": "Our interpreters specialize in a wide variety of fields. Our services include a local team and professionals willing to offer their services abroad to meet our clients’ needs.",
+                  "areas":[
+                    "Business rounds and business networking meetings",
+                    "Trade fairs and exhibitions",
+                    "Conferences and lectures",
+                    "Courses",
+                    "Visits to manufacturing plants",
+                    "Tourism"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     "slider":[
       "Language Audit",
       "Closed Captioning",
@@ -473,9 +1153,12 @@
           "titulo": "DUBBING",
           "descripcion": "rtenered with MainPost, we offer translation for dubbing and quality assurance of films and television programming."
         }
-
-      ]
+      ],
+      "extranjeras": "Foreign movies",
+      "doblaje": "Dubbing",
+      "nacionales": "Argentine movies"
     },
+    "derechos": "All rights reserved",
     "servicios":[
       {
         "description":[

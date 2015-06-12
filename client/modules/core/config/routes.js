@@ -5,23 +5,35 @@ angular
     $stateProvider
       .state('home', {
         url: '',
-        templateUrl: 'modules/core/views/home.html'
+        views: {
+          "base": {
+            templateUrl: 'modules/core/views/home.html'
+          }
+        }
       })
-      .state('profesionales', {
+      .state('adm1n', {
+        url: '/adm1n',
+        views: {
+          "base": {
+            templateUrl: 'modules/core/views/adm1n.html'
+          }
+        }
+      })
+      .state('adm1n.profesionales', {
         url: '/profesionales',
         templateUrl: 'modules/core/views/profesionales.html',
-        controller: 'proController',
+        controller: 'proController'
       })
-      .state('portfolio', {
+      .state('adm1n.portfolio', {
         url: '/portfolio',
         templateUrl: 'modules/core/views/portfolio.html',
-        controller: 'portController',
+        controller: 'portController'
       })
-      .state('noticias', {
+      .state('adm1n.noticias', {
         url: '/noticias',
         templateUrl: 'modules/core/views/noticias.html',
-        controller: 'notController',
+        controller: 'notController'
       });
 
-    $urlRouterProvider.otherwise('/app');
+    $urlRouterProvider.otherwise('');
   }]);
