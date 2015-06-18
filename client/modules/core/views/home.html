@@ -5,7 +5,7 @@
       </div>
       <div class="textshare">Compartir nuestro sitio web</div>
     </div>
-    <a class="w-inline-block linkface" href="#"><img class="botonface" src="images/botonface.png">
+    <a class="w-inline-block linkface" href=""><img class="botonface" src="images/botonface.png">
     </a>
     <div class="w-embed embedface">
       <div class="fb-page" data-href="https://www.facebook.com/connectionssi?fref=ts" data-width="350" data-height="500" data-hide-cover="true" data-show-facepile="true" data-show-posts="true">
@@ -21,13 +21,13 @@
       <div class="w-container cont1">
         <div class="w-nav barranav" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
           <div class="w-container">
-            <a class="w-inline-block linkbandera" href="#"><img scale class="imgbanderafra" src="images/fr.png" id="fra" ng-click="traducir($event)">
+            <a class="w-inline-block linkbandera" href=""><img scale class="imgbanderafra" src="images/fr.png" id="fra" ng-click="traducir($event)">
             </a>
-            <a class="w-inline-block linkbandera" href="#"><img scale class="imgbanderabra" src="images/brasil.png" id="por" ng-click="traducir($event)">
+            <a class="w-inline-block linkbandera" href=""><img scale class="imgbanderabra" src="images/brasil.png" id="por" ng-click="traducir($event)">
             </a>
-            <a class="w-inline-block linkbandera" href="#"><img scale class="imgbanderausa" src="images/eeuu.png" id="usa" ng-click="traducir($event)">
+            <a class="w-inline-block linkbandera" href=""><img scale class="imgbanderausa" src="images/eeuu.png" id="usa" ng-click="traducir($event)">
             </a>
-            <a class="w-inline-block linkbandera" href="#"><img scale class="imgbanderaarg" src="images/ar.png"  id="esp" ng-click="traducir($event)">
+            <a class="w-inline-block linkbandera" href=""><img scale class="imgbanderaarg" src="images/ar.png"  id="esp" ng-click="traducir($event)">
             </a>
             <a class="w-nav-brand w-clearfix" href="#inicio"><img class="imglogo" src="images/logo.png" width="203">
             </a>
@@ -74,7 +74,8 @@
           <div class="w-slide slide5">
             <div class="w-container contslid">
               <a class="w-inline-block linkslider" href="#NOTICIAS">
-                <p class="parraslider">{{ noticia.descripcionEsp }}</p><img class="imgnotislid" src="storage/images/{{noticia.imagen}}" width="521">
+                <p class="parraslider" compile="{{ noticia.descripcionEsp }}"><p>
+                <img class="imgnotislid" src="storage/images/{{noticia.imagen}}" width="521">
               </a>
             </div>
           </div>
@@ -122,8 +123,8 @@
             <a class="w-inline-block linkinicio" href="#SERVICIOS"><img class="imgicono" src="{{ s.imagen }}" width="186">
               <h3 class="titserv">{{ s.titulo }}</h3>
               <ul class="w-list-unstyled lista">
-                <li ng-repeat="item in s.description">
-                  {{ item }}
+                <li ng-repeat="item in s.description" compile="{{ item }}">
+
                 </li>
               </ul>
             </a>
@@ -140,7 +141,9 @@
         </div>
         <div class="w-container contnos">
           <p class="titnos" ng-repeat="d in translated.nosotros.descripcion"> {{ d.titulo }}
-            <br><em>{{ d.descripcion }}</em>
+            <br><span class="custom-font">
+              {{ d.descripcion }}
+            </span>
           </p>
 
           <div class="w-row rownos" ng-repeat="p in profesionales">
@@ -181,7 +184,7 @@
       <div class="w-section seccservi">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">
-            <h2 class="secciones">Servicios</h2>
+            <h2 class="secciones">{{ translated.services.titulo }}</h2>
           </div>
         </div>
         <div class="w-container contservicios">
@@ -203,8 +206,8 @@
                    ng-class="{'w--tab-active': tabSelected == key + 1}"
                    data-w-tab="Tab {{ key + 1 }}">
                 <div ng-repeat="x in value.servicios">
-                  <h4 style="color: white; font-size: 20px;">
-                    {{ x.titulo }}
+                  <h4 style="color: white; font-size: 20px;" compile="{{ x.titulo }}">
+
                   </h4>
                   <p class="textservi" ng-repeat="y in x.servicios">
                     {{ y.descripcion }} <br/>
@@ -410,7 +413,7 @@
       <div class="w-section seccnoti">
         <div class="divsecciones">
           <div class="w-container contdicsecciones">
-            <h2 class="secciones">Noticias y eventos</h2>
+            <h2 class="secciones"> {{ translated.noticias.titulo }}</h2>
           </div>
         </div>
         <div class="w-container contnoti" ng-repeat="n in noticias">
@@ -466,7 +469,7 @@
   <div class="divcontienefooter">
     <div class="w-section seccfooter">
       <div class="w-container">
-        <div class="textfooter">Connections Servicios Idiomáticos®&nbsp;&nbsp;|&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;{{translated.derechos}}</div>
+        <div class="textfooter" ng-click="adminPanel()">Connections Servicios Idiomáticos®&nbsp;&nbsp;|&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;{{translated.derechos}}</div>
       </div>
     </div>
   </div>

@@ -18,10 +18,13 @@
       "SERVICIOS",
       "PORTFOLIO",
       "NOTICIAS Y EVENTOS",
-      "CONTACTENOS"
+      "CONTÁCTENOS"
     ],
+    "noticias": {
+      "titulo": "Noticias y eventos"
+    },
     "slider":[
-      "Auditoría lingúistica para empresas",
+      "Auditoría lingüística para empresas",
       "Closed Captioning",
       "Traducción",
       "Subtitulado",
@@ -32,7 +35,7 @@
       "titulo": "Servicios",
       "servicio": [
         {
-        "titulo": "TRADUCCION TËCNICA",
+        "titulo": "TRADUCCIÓN TÉCNICA",
         "servicios":[
           {
             "titulo": "Traducción Jurídica",
@@ -91,10 +94,10 @@
         ]
        },
        {
-         "titulo": "TRADUCCION AUDIOVISUAL",
+         "titulo": "TRADUCCIÓN AUDIOVISUAL",
          "servicios":[
            {
-             "titulo": "Subtitulado y Closed Captioning",
+             "titulo": "Subtitulado y <i>Closed Captioning</i>",
              "servicios":[
                {
                  "descripcion": "El subtitulado es un proceso minucioso que comprende: \r\nEl análisis del material y la preparación para la inserción de subtítulos. La traducción del texto sobre el guión y la imagen. El empleo de opciones lingüísticas accesibles para los espectadores de todas las regiones donde se proyectará la película. La edición de los subtítulos de modo que sean lingüísticamente correctos y respeten las restricciones de espacio y tiempo que impone la proyección en pantalla. Una exhaustiva revisión final de la sincronización de subtítulo e imagen."
@@ -113,7 +116,7 @@
              ]
            },
            {
-             "titulo": "Doblage",
+             "titulo": "Doblaje",
              "servicios":[
                {
                  "descripcion": "Con su empresa partner MainPost, se ofrece traducción para doblaje, revisión y control de calidad de programación para cine y televisión."
@@ -169,10 +172,6 @@
                  ]
                },
                {
-                 "descripcion": "English for Specific Purposes",
-                 "areas":[
-                   "Agribusiness Programs"
-                 ],
                  "meta": "images/anglia568.jpg"
                }
              ]
@@ -221,7 +220,7 @@
       "descripcion":[
         {
           "titulo":"Especialización",
-          "descripcion":"Nuestros profesionales se capacitan constantemente en: Traducción, Subtitulado y subtitulado oculto, Interpretación, Auditoría lingüística en empresas."
+          "descripcion":"Nuestros profesionales se capacitan constantemente en: traducción, subtitulado y subtitulado oculto, interpretación y auditoría lingüística en empresas."
         },
         {
           "titulo":"Trabajo en equipo",
@@ -241,7 +240,7 @@
          "descripcion": "Transcripción para sordomudos para empresas de Europa y de los EE. UU. Servicios tercerizados a Televisa, Caracol y  MTV, entre otros."
         },
         {
-          "titulo": "TRADUCCION AUDIOVISUAL PARA SUBTITULADO",
+          "titulo": "TRADUCCIÓN AUDIOVISUAL PARA SUBTITULADO",
           "descripcion": "Connections mantiene una alianza estratégica con la empresa de subtitulado MainPost, ofrecemos traducción y adaptación de guiones para cine y televisión."
         },
         {
@@ -261,7 +260,7 @@
           "Política internacional",
           "Industria",
           "Agronegocios",
-          "Mecanica y maquinarias",
+          "Mecánica y maquinarias",
           "Energias sustentables"
         ],
         "imagen":"images/traducciones.png",
@@ -271,18 +270,18 @@
         "description":[
           "Doblaje",
           "Subtitulado oculto para sordomudos",
-          "Transcripcion de audio y video",
+          "Transcripción de audio y vídeo",
           "Subtitulado",
           "Películas",
           "Telenovelas",
           "Spots publicitarios",
           "Documentales",
           "Cortos",
-          "Videos educativos, institucionales y corporativos",
-          "Cursos online"
+          "Vídeos educativos, institucionales y corporativos",
+          "Cursos  <i>online</i>"
         ],
         "imagen":"images/subtitulado.png",
-        "titulo":"Traduccion Audiovisual"
+        "titulo":"Traducción Audiovisual"
       },
       {
         "description":[
@@ -291,7 +290,7 @@
           "Organismos"
         ],
         "imagen":"images/auditoria.png",
-        "titulo":"Auditoria linguistica"
+        "titulo":"Auditoria lingüística"
       },
       {
         "description":[
@@ -301,7 +300,7 @@
           "Cursos"
         ],
         "imagen":"images/interprete.png",
-        "titulo":"INTERPRETACION"
+        "titulo":"Interpretación"
       }
     ]
   },
@@ -320,10 +319,10 @@
     },
     "navbar":[
       "ACCUEIL",
-      "À PROPOS DE NOUS",
+      "Á PROPOS DE NOUS",
       "SERVICES",
       "PORTFOLIO",
-      "ÉvÈnements",
+      "ÉVÉNEMENTS",
       "CONTACTEZ-NOUS"
     ],
     "slider":[
@@ -551,6 +550,9 @@
       "nacionales": "Quelques films argentins"
     },
     "derechos": "Tous droits réservés",
+    "noticias": {
+      "titulo": "Événements"
+    },
     "servicios":[
       {
         "description":[
@@ -614,7 +616,7 @@
         "nombre":"Nome",
         "telefono":"Telefone"
       },
-      "titulo":"Contacte conosco"
+      "titulo":"Fale conosco"
     },
     "derechos": "Todos os direitos reservados",
     "portfolio":{
@@ -650,11 +652,11 @@
       "descripcion":[
         {
           "titulo":"Especialização",
-          "descripcion":"Nossos profissionais se capacitam constantemente em: Tradução, Legendado e legendado oculto, Interpretação consecutiva e simultânea, Auditoria linguística em empresas."
+          "descripcion":"Nossos profissionais se capacitam constantemente em: Tradução, Legendado e legendado oculto, Interpretação consecutiva e simultânea e Auditoria linguística em empresas."
         },
         {
           "titulo":"Trabalho em equipe",
-          "descripcion":"Colaboração com o cliente. Em festivais internacionais de cinema, feiras comerciais ou exposições, Connections Acompanha sempre."
+          "descripcion":"Colaboração com o cliente. Em festivais internacionais de cinema, feiras comerciais ou exposições, Connections acompanha sempre."
         },
         {
           "titulo":"Alianças",
@@ -855,6 +857,9 @@
       "Dublagem"
     ],
     "derechos": "Todos os direitos reservados",
+    "noticias": {
+      "titulo": "Notícias e eventos"
+    },
     "servicios":[
       {
         "description":[
@@ -928,11 +933,11 @@
       "CONTACT US"
     ],
     "nosotros":{
-      "titulo": "About us",
+      "titulo": "About Us",
       "descripcion":[
         {
           "titulo": "Especialization",
-          "descripcion": "Our translators specialize and constantly train in: Translation, Subtitling, Closed Captioning, Consecutive and Simultaneous Interpretation, and Business Language Audit."
+          "descripcion": "Our translators specialize and constantly train in: Translation, Subtitling, Closed Captioning, Consecutive and Simultaneous Interpretation and Business Language Audit."
         },
         {
           "titulo": "Team Spirit",
@@ -1159,6 +1164,9 @@
       "nacionales": "Argentine movies"
     },
     "derechos": "All rights reserved",
+    "noticias": {
+      "titulo": "News & Events"
+    },
     "servicios":[
       {
         "description":[

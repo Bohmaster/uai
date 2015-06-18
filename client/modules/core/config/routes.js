@@ -4,7 +4,7 @@ angular
     function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
-        url: '',
+        url: '/home',
         views: {
           "base": {
             templateUrl: 'modules/core/views/home.html'
@@ -35,5 +35,5 @@ angular
         controller: 'notController'
       });
 
-    $urlRouterProvider.otherwise('');
+    $urlRouterProvider.otherwise('home');
   }]);

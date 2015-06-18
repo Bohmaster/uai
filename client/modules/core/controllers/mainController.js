@@ -1,8 +1,8 @@
 angular
   .module('uai.module.core')
     .controller('MainController',
-      ['$scope', '$http', '$log', 'Profesional', 'Notis', 'Portfolio',
-        function($scope, $http, $log, Profesional, Notis, Portfolio) {
+      ['$scope', '$http', '$log', 'Profesional', 'Notis', 'Portfolio', '$modal',
+        function($scope, $http, $log, Profesional, Notis, Portfolio, $modal) {
 
         /**
         * TRANSLATIONS CONFIG
@@ -100,4 +100,31 @@ angular
           $scope.tinyMCEoptions = {
             format: 'text'
           }
+
+      // Admin panel
+
+      $scope.adminPanel = function() {
+        $modal.open({
+          templateUrl: 'modules/core/views/admin.html',
+          controller: function($scope, $state) {
+            $scope.intentos = 3;
+            $scope.ingresar = function() {
+              if ($scope.model.password == "karinaRabolini") {
+                $state.go('adm1n');
+                $scope.$close();
+              } else {
+                $scope.intentos -= 1;
+                window.alert('Acceso denegado. Le quedan ' + $scope.intentos + ' intentos');
+              }
+            }
+
+            $scope.$watch('intentos', function(newVal) {
+              if (newVal == 0) {
+                $scope.intentos = false;
+                $scope.$close();
+              }
+            })
+          }
+        });
+      }
     }]);

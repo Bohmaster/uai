@@ -545,11 +545,17 @@ p {
   padding-right: 9px;
   padding-bottom: 10px;
   padding-left: 20px;
-  font-family:'Alegreya Sans', sans-serif;
+  font-family: Asap, sans-serif;
   font-size: 20px;
   line-height: 18px;
   font-weight: 900;
   text-align: left;
+}
+
+.custom-font {
+  font-family: Asap, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
 .textnos {
   font-family: Asap, sans-serif;

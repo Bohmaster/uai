@@ -71,10 +71,19 @@ angular.module('uai.module.core')
       scope: {
         data: '@compile'
       },
-      link: function(scope, elem, attrs) {
-        var linkFn = $compile(scope.data);
-        var content = linkFn(scope);
-        elem.append(content);
+      compile: function(elem, attrs) {
+
+        var x = attrs.compile;
+        var y = "<span>" + x + "</span>"
+
+        attrs.compile = y;
+
+        return function postLink(scope, elem, attrs) {
+          var linkFn = $compile(scope.data);
+          var content = linkFn(scope);
+          elem.append(content);
+        }
       }
+
     }
   });

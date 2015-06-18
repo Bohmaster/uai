@@ -1,0 +1,9 @@
+<p class="gestion-title" style="text-align: center;">Ingreso admin</p>
+<form name="adminForm" novalidate>
+  <div class="form-group" ng-class="{'has-error': adminForm.content.$invalid && adminForm.content.$dirty}">
+    <input type="text" class="form-control focus margin" name="password"
+    placeholder="Ingrese su clave de acceso" autocomplete="off" required
+    ng-model="model.password">
+  </div>
+</form>
+<button class="btn btn-default center-block" ng-disabled="adminForm.$invalid" ng-click="ingresar()">Ingresar</button>
