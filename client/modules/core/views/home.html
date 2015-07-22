@@ -73,8 +73,27 @@
           </div>
           <div class="w-slide slide5">
             <div class="w-container contslid">
-              <a class="w-inline-block linkslider" href="#NOTICIAS">
-                <p class="parraslider" compile="{{ noticia.descripcionEsp }}"><p>
+              <a class="w-inline-block linkslider" href="#noticias">
+                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'esp'">
+                  {{noticia.tituloEsp}}
+                </p>
+                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'usa'">
+                  {{noticia.tituloIng}}
+                </p>
+                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'por'">
+                  {{noticia.tituloPor}}
+                </p>
+                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'fra'">
+                  {{noticia.tituloFra}}
+                </p>
+                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionEsp | limitTo: 300 }}..." ng-show="lenguaje == 'esp'">
+                </p>
+                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionIng | limitTo: 300 }}..." ng-show="lenguaje == 'usa'">
+                </p>
+                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionPor | limitTo: 300 }}..." ng-show="lenguaje == 'por'">
+                </p>
+                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionPor | limitTo: 300 }}..." ng-show="lenguaje == 'fra'">
+                </p>
                 <img class="imgnotislid" src="storage/images/{{noticia.imagen}}" width="521">
               </a>
             </div>
@@ -120,12 +139,13 @@
       <div class="w-container contserv">
         <div class="w-row">
           <div class="w-col w-col-3" ng-repeat="s in translated.servicios">
-            <a class="w-inline-block linkinicio" href="#SERVICIOS"><img class="imgicono" src="{{ s.imagen }}" width="186">
+            <a class="w-inline-block linkinicio" href="#servicios"><img class="imgicono" src="{{ s.imagen }}" width="186">
               <h3 class="titserv">{{ s.titulo }}</h3>
               <ul class="w-list-unstyled lista">
                 <li ng-repeat="item in s.description" compile="{{ item }}">
 
                 </li>
+                <li ng-repeat="item in s.meta" compile="{{item}}" style="margin-left: 5px; color:grey;"></li>
               </ul>
             </a>
           </div>
@@ -206,11 +226,11 @@
                    ng-class="{'w--tab-active': tabSelected == key + 1}"
                    data-w-tab="Tab {{ key + 1 }}">
                 <div ng-repeat="x in value.servicios">
-                  <h4 style="color: white; font-size: 20px;" compile="{{ x.titulo }}">
+                  <h4 style="color: white; font-size: 18px;" compile="{{ x.titulo }}">
 
                   </h4>
                   <p class="textservi" ng-repeat="y in x.servicios">
-                    {{ y.descripcion }} <br/>
+                    <span compile="{{ y.descripcion }}"></span> <br/>
                     <span style="padding-left: 15px" ng-repeat="a in y.areas">
                       {{ a }} <br/>
                     </span>
@@ -421,6 +441,10 @@
             <div class="w-col w-col-4"><img class="imgnoti" src="storage/images/{{n.imagen}}">
             </div>
             <div class="w-col w-col-8">
+              <h2 style="color:white; font-size: 21px;" ng-show="lenguaje == 'esp'">{{ n.tituloEsp }}</h2>
+              <h2 style="color:white; font-size: 21px;" ng-show="lenguaje == 'ing'">{{ n.tituloIng }}</h2>
+              <h2 style="color:white; font-size: 21px;" ng-show="lenguaje == 'fra'">{{ n.tituloFra }}</h2>
+              <h2 style="color:white; font-size: 21px;" ng-show="lenguaje == 'por'">{{ n.tituloPor }}</h2>
               <p class="textnoti" compile="{{ n.descripcionEsp }}" ng-show="lenguaje == 'esp'"></p>
               <p class="textnoti" compile="{{ n.descripcionIng }}" ng-show="lenguaje == 'ing'"></p>
               <p class="textnoti" compile="{{ n.descripcionFra }}" ng-show="lenguaje == 'fra'"></p>

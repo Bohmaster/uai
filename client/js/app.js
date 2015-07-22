@@ -12,4 +12,7 @@ angular
     'ui.tinymce',
 
     'uai.module.core',
-  ]);
+  ])
+  .config(function($compileProvider) {
+    $compileProvider.debugInfoEnabled(false);
+  });

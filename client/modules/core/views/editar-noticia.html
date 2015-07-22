@@ -15,16 +15,16 @@
         placeholder="Descripcion" autocomplete="off"
         ng-model="noticia.descripcionEsp"></textarea>
       </accordion-group>
-      <accordion-group heading="Ingles">
+      <accordion-group heading="Inglés">
         <input type="text" class="form-control focus" name="tituloIng"
         placeholder="Titulo" autocomplete="off"
         ng-model="noticia.tituloIng">
         <textarea ui-tinymce class="form-control focus" name="descripcionIng"
         rows="4" cols="50"
         placeholder="Descripcion" autocomplete="off"
-        ng-model="noticia.descripcionIng"></textarea>
+        ng-model="noticia.descripcionIng"></textarea>      
       </accordion-group>
-      <accordion-group heading="Portugues">
+      <accordion-group heading="Portugués">
         <input type="text" class="form-control focus" name="tituloPor"
         placeholder="Titulo" autocomplete="off"
         ng-model="noticia.tituloPor">
@@ -33,7 +33,7 @@
         placeholder="Descripcion" autocomplete="off"
         ng-model="noticia.descripcionPor"></textarea>
       </accordion-group>
-      <accordion-group heading="Frances">
+      <accordion-group heading="Francés">
         <input type="text" class="form-control focus" name="tituloFra"
         placeholder="Titulo" autocomplete="off"
         ng-model="noticia.tituloFra">
@@ -43,6 +43,12 @@
         ng-model="noticia.descripcionFra"></textarea>
       </accordion-group>
     </accordion>
-
+    <label for="files">Imagen</label>
+    <input type="file"
+    file-input="files"
+    class="margin"
+    multiple
+    />
+    <li>{{ noticia.imagen }}</li>
     <button class="btn btn-default" ng-disabled="todoForm.$invalid" ng-click="editarNoticia()">Editar</button>
 </form>

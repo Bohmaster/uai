@@ -109,7 +109,7 @@ angular
           controller: function($scope, $state) {
             $scope.intentos = 3;
             $scope.ingresar = function() {
-              if ($scope.model.password == "karinaRabolini") {
+              if ($scope.model.password == "translate") {
                 $state.go('adm1n');
                 $scope.$close();
               } else {

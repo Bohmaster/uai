@@ -9,5 +9,12 @@
     "connector": "loopback-component-storage",
     "provider": "filesystem",
     "root": "server/storage"
+  },
+  "newDatasource": {
+    "host": "138.36.238.178",
+    "port": 27017,
+    "database": "CONNECTIONS",
+    "name": "newDatasource",
+    "connector": "mongodb"
   }
 }

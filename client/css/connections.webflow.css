@@ -386,9 +386,10 @@ p {
   padding-top: 0px;
 }
 .texttabs {
-  font-family:'Julius Sans One', sans-serif;
+  font-family:  Marcellus, sans-serif;
   font-size: 16px;
   font-weight: 700;
+
 }
 .tabsmenu {
   display: block;
@@ -423,6 +424,7 @@ p {
 }
 .slide5 {
   height: auto;
+  background: white;
 }
 .imgnotislid {
   display: block;
@@ -949,10 +951,10 @@ p {
   padding-top: 19px;
 }
 .parraslider {
-  position: relative;
-  top: 0px;
+  position: absolute;
+  top: 100px;
   display: block;
-  width: 500px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   padding-right: 5px;
@@ -962,6 +964,7 @@ p {
   color: white;
   text-align: center;
   text-decoration: none;
+  z-index: 9999;
 }
 .secslider {
   display: block;
@@ -1183,4 +1186,12 @@ html.w-mod-js *[data-ix="facebook"] {
     width: 320px;
     font-size: 12px;
   }
+}
+
+.titulo-img {
+  position: absolute;
+  top:10px;
+  width:  auto;
+  height: auto;
+  z-index: 10000;
 }

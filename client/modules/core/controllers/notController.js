@@ -34,7 +34,7 @@ angular
       'descripcionPor': $scope.model.descripcionPor,
       'tituloFra': $scope.model.tituloFra,
       'descripcionFra': $scope.model.descripcionFra,
-      'imagen': $scope.files[0].name,
+      'imagen': $scope.files[0].name
     },
     function(success, headers) {
       console.log('New notice added sucessfuly');
@@ -72,25 +72,69 @@ angular
       controller: function($scope, $rootScope, noticia, Notis, $http) {
         $scope.noticia = noticia;
 
-        $scope.editarNoticia = function() {
-          $http.put('/api/Notis/' + modelId, {
-            tituloEsp: $scope.noticia.tituloEsp,
-            descripcionEsp: $scope.noticia.descripcionEsp,
-            tituloIng: $scope.noticia.tituloIng,
-            descripcionIng: $scope.noticia.descripcionIng,
-            tituloPor: $scope.noticia.tituloPor,
-            descripcionPor: $scope.noticia.descripcionPor,
-            tituloFra: $scope.noticia.tituloFra,
-            descripcionFra: $scope.noticia.descripcionFra,
-          })
-          .success(function(data) {
-            console.log(data);
-            $rootScope.$broadcast('Notis.editada');
-            $scope.$close(data);
-          })
-          .error(function(err) {
-            console.log(err);
+        $scope.upload = function() {
+          var fd = new FormData();
+          angular.forEach($scope.files, function(file) {
+            fd.append('file', file);
           });
+          $http.post('/api/containers/images/upload',
+          fd, {
+            transformRequest: angular.identity,
+            headers: {'Content-Type': undefined}
+          }
+        ).success(function(d){
+          console.log(d);
+          console.log($scope.files);
+        })
+        .error(function(e) {
+          console.log(e);
+        });
+      };
+
+        $scope.editarNoticia = function() {
+
+          if ($scope.files) {
+            $http.put('/api/Notis/' + modelId, {
+              tituloEsp: $scope.noticia.tituloEsp,
+              descripcionEsp: $scope.noticia.descripcionEsp,
+              tituloIng: $scope.noticia.tituloIng,
+              descripcionIng: $scope.noticia.descripcionIng,
+              tituloPor: $scope.noticia.tituloPor,
+              descripcionPor: $scope.noticia.descripcionPor,
+              tituloFra: $scope.noticia.tituloFra,
+              descripcionFra: $scope.noticia.descripcionFra,
+              imagen: $scope.files[0].name || $scope.noticia.imagen
+            })
+            .success(function(data) {
+              console.log(data);
+              $scope.upload();
+              $rootScope.$broadcast('Notis.editada');
+              $scope.$close(data);
+            })
+            .error(function(err) {
+              console.log(err);
+            });
+          } else {
+            $http.put('/api/Notis/' + modelId, {
+              tituloEsp: $scope.noticia.tituloEsp,
+              descripcionEsp: $scope.noticia.descripcionEsp,
+              tituloIng: $scope.noticia.tituloIng,
+              descripcionIng: $scope.noticia.descripcionIng,
+              tituloPor: $scope.noticia.tituloPor,
+              descripcionPor: $scope.noticia.descripcionPor,
+              tituloFra: $scope.noticia.tituloFra,
+              descripcionFra: $scope.noticia.descripcionFra
+            })
+            .success(function(data) {
+              console.log(data);
+              $rootScope.$broadcast('Notis.editada');
+              $scope.$close(data);
+            })
+            .error(function(err) {
+              console.log(err);
+            });
+          }
+
         }
       }
     });
