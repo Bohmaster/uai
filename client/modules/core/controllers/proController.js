@@ -9,7 +9,9 @@ angular
             tituloEsp: '',
             descripcionEsp: '',
             tituloIng: '',
-            descripcionIng: ''
+            descripcionIng: '',
+	    descripcionFra: '',
+            descripcionPor: ''
           };
 
       function cargarProfesionales() {
@@ -39,6 +41,8 @@ angular
               'descripcionEsp': $scope.model.descripcionEsp,
               'tituloIng': $scope.model.tituloIng,
               'descripcionIng': $scope.model.descripcionIng,
+              'descripcionFra': $scope.model.descripcionFra,
+              'descripcionPor': $scope.model.descripcionPor,
               'foto': $scope.files[0].name
             },
             function(success, headers) {
@@ -107,6 +111,9 @@ angular
                     descripcionEsp: $scope.profesional.descripcionEsp,
                     tituloIng: $scope.profesional.tituloIng,
                     descripcionIng: $scope.profesional.descripcionIng,
+                    descripcionFra: $scope.model.descripcionFra,
+                    descripcionPor: $scope.model.descripcionPor,
+
                     foto: $scope.files[0].name
                   })
                   .then(function(data) {

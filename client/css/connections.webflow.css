@@ -211,6 +211,11 @@ p {
   background-image: url('../images/slidecine.jpg');
   background-position: 50% 50%;
 }
+
+.slide5 {
+  background-image: url('../images/sliderUltimo.jpg');
+  background-position: 50% 50%;
+}
 .lista {
   width: auto;
   height: auto;
@@ -422,10 +427,7 @@ p {
   background-image: -webkit-linear-gradient(#0f1263 20%, #374675);
   background-image: linear-gradient(#0f1263 20%, #374675);
 }
-.slide5 {
-  height: auto;
-  background: white;
-}
+
 .imgnotislid {
   display: block;
   width: auto;

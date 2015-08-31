@@ -3,6 +3,9 @@
   "base": "PersistedModel",
   "strict": false,
   "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
   "properties": {
     "tituloEsp": {
       "type": "string",

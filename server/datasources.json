@@ -16,5 +16,12 @@
     "database": "CONNECTIONS",
     "name": "newDatasource",
     "connector": "mongodb"
+  },
+  "connectionsDB": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "connectionsDB",
+    "name": "connectionsDB",
+    "connector": "mongodb"
   }
 }

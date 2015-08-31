@@ -74,27 +74,7 @@
           <div class="w-slide slide5">
             <div class="w-container contslid">
               <a class="w-inline-block linkslider" href="#noticias">
-                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'esp'">
-                  {{noticia.tituloEsp}}
-                </p>
-                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'usa'">
-                  {{noticia.tituloIng}}
-                </p>
-                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'por'">
-                  {{noticia.tituloPor}}
-                </p>
-                <p class="parraslider" style="width: 940px; top: 10px; font-size:20px; padding-top: 5px;" ng-if="lenguaje == 'fra'">
-                  {{noticia.tituloFra}}
-                </p>
-                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionEsp | limitTo: 300 }}..." ng-show="lenguaje == 'esp'">
-                </p>
-                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionIng | limitTo: 300 }}..." ng-show="lenguaje == 'usa'">
-                </p>
-                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionPor | limitTo: 300 }}..." ng-show="lenguaje == 'por'">
-                </p>
-                <p class="parraslider" style="width: 940px; top: 191px;" compile="{{ noticia.descripcionPor | limitTo: 300 }}..." ng-show="lenguaje == 'fra'">
-                </p>
-                <img class="imgnotislid" src="storage/images/{{noticia.imagen}}" width="521">
+                <div style="width: 100%; height: 100%;"></div>
               </a>
             </div>
           </div>
