@@ -233,7 +233,7 @@
         </div>
         <div class="w-container contport">
           <p class="portfolio" compile="{{ portfolio.descripcionEsp }}" ng-if="lenguaje == 'esp'"></p>
-          <p class="portfolio" compile="{{ portfolio.descripcionIng }}" ng-if="lenguaje == 'ing'"></p>
+          <p class="portfolio" compile="{{ portfolio.descripcionIng }}" ng-if="lenguaje == 'usa'"></p>
           <p class="portfolio" compile="{{ portfolio.descripcionFra }}" ng-if="lenguaje == 'fra'"></p>
           <p class="portfolio" compile="{{ portfolio.descripcionPor }}" ng-if="lenguaje == 'por'"></p>
           <div class="divpublis">
@@ -426,7 +426,7 @@
               <h2 style="color:white; font-size: 21px;" ng-show="lenguaje == 'fra'">{{ n.tituloFra }}</h2>
               <h2 style="color:white; font-size: 21px;" ng-show="lenguaje == 'por'">{{ n.tituloPor }}</h2>
               <p class="textnoti" compile="{{ n.descripcionEsp }}" ng-show="lenguaje == 'esp'"></p>
-              <p class="textnoti" compile="{{ n.descripcionIng }}" ng-show="lenguaje == 'ing'"></p>
+              <p class="textnoti" compile="{{ n.descripcionIng }}" ng-show="lenguaje == 'usa'"></p>
               <p class="textnoti" compile="{{ n.descripcionFra }}" ng-show="lenguaje == 'fra'"></p>
               <p class="textnoti" compile="{{ n.descripcionPor }}" ng-show="lenguaje == 'por'"></p>
             </div>

@@ -72,6 +72,7 @@ angular
         function cargarPortfolio() {
           Portfolio.find(function(data) {
             $scope.portfolio = data[0];
+	    console.log('MERCA', data);
           });
         }
 

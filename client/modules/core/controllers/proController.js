@@ -111,9 +111,8 @@ angular
                     descripcionEsp: $scope.profesional.descripcionEsp,
                     tituloIng: $scope.profesional.tituloIng,
                     descripcionIng: $scope.profesional.descripcionIng,
-                    descripcionFra: $scope.model.descripcionFra,
-                    descripcionPor: $scope.model.descripcionPor,
-
+                    descripcionFra: $scope.profesional.descripcionFra,
+                    descripcionPor: $scope.profesional.descripcionPor,
                     foto: $scope.files[0].name
                   })
                   .then(function(data) {
@@ -128,7 +127,11 @@ angular
                     tituloEsp: $scope.profesional.tituloEsp,
                     descripcionEsp: $scope.profesional.descripcionEsp,
                     tituloIng: $scope.profesional.tituloIng,
-                    descripcionIng: $scope.profesional.descripcionIng
+	            tituloFra: $scope.profesional.tituloFra,
+                    tituloPor: $scope.profesional.tituloPor,		
+                    descripcionIng: $scope.profesional.descripcionIng,
+                    descripcionFra: $scope.profesional.descripcionFra,
+                    descripcionPor: $scope.profesional.descripcionPor
                   })
                   .then(function(data) {
                     console.log(data);
